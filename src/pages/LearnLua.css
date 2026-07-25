@@ -1,0 +1,199 @@
+.back-link {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.lua-hero {
+  padding-bottom: 72px;
+}
+
+/* Code window (shared by static blocks and the playground) */
+.code-window {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.code-body {
+  margin: 0;
+  padding: 20px 22px 24px;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text);
+  overflow-x: auto;
+}
+
+.code-editor {
+  display: block;
+  width: 100%;
+  border: none;
+  resize: vertical;
+  background: transparent;
+  color: var(--text);
+  font-size: 13.5px;
+  line-height: 1.75;
+  padding: 20px 22px;
+  outline: none;
+}
+
+.tok-comment {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.tok-string {
+  color: var(--accent);
+}
+
+.tok-keyword {
+  color: #c792ea;
+  font-weight: 500;
+}
+
+[data-theme='light'] .tok-keyword {
+  color: #9d3fc7;
+}
+
+.tok-number {
+  color: #e3a24c;
+}
+
+.tok-function {
+  color: #5fb4ff;
+}
+
+[data-theme='light'] .tok-function {
+  color: #2f6fed;
+}
+
+/* Lessons */
+.lesson-list {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.lesson-row {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.lesson-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.lesson-copy h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.lesson-copy p {
+  margin-top: 12px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+@media (max-width: 860px) {
+  .lesson-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Challenges */
+.challenge-list {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.challenge-row {
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.challenge-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.challenge-row h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.challenge-instructions {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.playground-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px 18px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.hint-toggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hint-toggle:hover {
+  color: var(--accent);
+}
+
+.playground-feedback {
+  margin: 0;
+  padding: 12px 22px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  border-top: 1px solid var(--border);
+}
+
+.playground-feedback.correct {
+  color: var(--accent);
+}
+
+.playground-feedback.incorrect {
+  color: var(--danger);
+}
+
+.playground-hint {
+  margin: 0;
+  padding: 0 22px 18px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}

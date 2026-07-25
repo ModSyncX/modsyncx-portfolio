@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "Softwareentwickler",
+    "title": "ModSyncX",
+    "subtitle": "FiveM Developer & Discord Bot Developer",
+    "description": "Ich entwickle maßgeschneiderte Scripts für FiveM-Server und Discord-Bots, die zuverlässig laufen und sauber aufgebaut sind. Von Gameplay-Systemen bis zur Server-Automatisierung.",
+    "ctaPrimary": "Kontakt aufnehmen",
+    "ctaSecondary": "Skills ansehen",
+    "badge": "Verfügbar für neue Projekte",
+    "terminal": [
+      { "cmd": "whoami", "out": "ModSyncX" },
+      { "cmd": "role --show", "out": "FiveM Developer & Discord Bot Developer" },
+      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
+      { "cmd": "status", "out": "bereit für neue Anfragen" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Können",
+    "title": "Was ich mache",
+    "lead": "Ein Überblick über die Bereiche, in denen ich zuhause bin.",
+    "items": [
+      {
+        "title": "FiveM Developer",
+        "description": "Eigene Scripts, Gameplay-Systeme und Server-Anpassungen für FiveM – von Frameworks bis zu individuellen Features."
+      },
+      {
+        "title": "Discord Bot Developer",
+        "description": "Bots für Moderation, Automatisierung und Community-Management, zugeschnitten auf den jeweiligen Server."
+      },
+      {
+        "title": "Lua",
+        "description": "Solide Erfahrung mit Lua im FiveM- und Scripting-Umfeld."
+      },
+      {
+        "title": "JavaScript & TypeScript",
+        "description": "Frontend- und Backend-Entwicklung mit modernem, typsicherem JavaScript."
+      },
+      {
+        "title": "Python",
+        "description": "Automatisierung, Tools und Backend-Logik in Python."
+      },
+      {
+        "title": "Server & Automatisierung",
+        "description": "Aufsetzen, Konfigurieren und Automatisieren von Servern und Workflows."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Lass uns reden",
+    "lead": "Ob Projekt-Anfrage oder einfach nur Hallo sagen – ich freue mich über Nachrichten.",
+    "github": "GitHub",
+    "discord": "Discord",
+    "email": "E-Mail"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "lua": {
+    "nav": "Lua lernen",
+    "back": "← Zurück zur Startseite",
+    "hero": {
+      "eyebrow": "Guide",
+      "title": "Lua verstehen",
+      "description": "Eine kurze, praktische Einführung in Lua – die Sprache, in der die meisten FiveM-Scripts geschrieben sind. Unten kannst du außerdem selbst Code schreiben und direkt prüfen lassen, ob er stimmt."
+    },
+    "sections": {
+      "eyebrow": "Grundlagen",
+      "title": "Wie Lua-Scripte funktionieren",
+      "lead": "Vier Bausteine, die in praktisch jedem FiveM-Script vorkommen.",
+      "items": [
+        {
+          "title": "Variablen",
+          "description": "Mit `local` legst du Werte ab, die dein Script sich merkt – Namen, Zahlen oder true/false-Werte."
+        },
+        {
+          "title": "Bedingungen",
+          "description": "Mit `if / then / else / end` lässt du dein Script je nach Situation unterschiedlich reagieren."
+        },
+        {
+          "title": "Funktionen",
+          "description": "Eine Funktion bündelt wiederkehrende Logik unter einem Namen, den du überall im Script aufrufen kannst."
+        },
+        {
+          "title": "FiveM Events",
+          "description": "Mit `RegisterCommand` und `TriggerClientEvent` sprechen Server- und Client-Scripts miteinander."
+        }
+      ]
+    },
+    "playground": {
+      "eyebrow": "Übung",
+      "title": "Probier's selbst",
+      "lead": "Schreib den passenden Code ins Feld und klicke auf „Prüfen“ – du bekommst sofort Feedback.",
+      "checkButton": "Prüfen",
+      "resetButton": "Zurücksetzen",
+      "hintButton": "Hinweis anzeigen",
+      "correct": "Richtig! ✓",
+      "incorrect": "Noch nicht ganz richtig. ✗",
+      "challenges": [
+        {
+          "title": "Variable deklarieren",
+          "instructions": "Deklariere eine lokale Variable namens `level` mit dem Wert `5`.",
+          "hint": "Nutze das Schlüsselwort `local`, gefolgt vom Namen, einem `=` und dem Wert: local level = 5"
+        },
+        {
+          "title": "If-Bedingung schreiben",
+          "instructions": "Die Variable `cash` ist bereits vorgegeben. Schreibe eine `if`-Bedingung, die prüft, ob `cash` größer oder gleich 100 ist.",
+          "hint": "Struktur: if cash >= 100 then ... end"
+        },
+        {
+          "title": "Funktion definieren",
+          "instructions": "Schreibe eine lokale Funktion namens `heal`, die einen Parameter entgegennimmt.",
+          "hint": "Struktur: local function heal(player) ... end"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "eyebrow": "Projekte",
+    "title": "Woran ich gearbeitet habe",
+    "lead": "Ein Einblick in ein echtes Projekt aus der Praxis.",
+    "ticketbot": {
+      "name": "Discord Ticket-Bot",
+      "tagline": "Vollständiges Support- und Community-Management-System für Discord",
+      "stack": "Node.js · discord.js v14 · MySQL",
+      "description": "Ein umfangreicher Discord-Bot für Community- und Server-Management, gebaut mit discord.js v14. Über 45 Slash-Commands decken Support-Tickets, Moderation und Community-Features ab – modular aufgeteilt in Commands- und Systems-Module.",
+      "features": [
+        "Ticket-System mit mehreren Kategorien (Support, Fraktion, Development, Team-Bewerbung u.v.m.)",
+        "Rollen- & Berechtigungssystem je Ticket-Kategorie",
+        "Automatisches Schließen inaktiver Tickets mit Warnstufen",
+        "HTML-Transcript-Speicherung abgeschlossener Tickets",
+        "5-Sterne-Bewertungssystem nach Ticket-Abschluss",
+        "Moderations-Tools: Warn, Mute, Ban, Tempban, Notizen",
+        "TikTok-Live- & Twitch-Benachrichtigungen, Umfragen, Leaderboard"
+      ]
+    }
+  },
+  "frameworksTeaser": {
+    "eyebrow": "FiveM Frameworks",
+    "title": "ESX, QBCore oder Qbox?",
+    "lead": "Eine kurze Übersicht, wie die drei großen FiveM-Frameworks funktionieren und sich unterscheiden.",
+    "button": "Frameworks vergleichen"
+  },
+  "frameworks": {
+    "nav": "Frameworks",
+    "back": "← Zurück zur Startseite",
+    "hero": {
+      "eyebrow": "Guide",
+      "title": "ESX, QBCore & Qbox",
+      "description": "Ein Framework gibt einem FiveM-Server die Grundsysteme vor – Jobs, Inventar, Banking und mehr – statt dass jedes Script bei null anfängt. Ich entwickle gleichermaßen für alle drei großen Frameworks."
+    },
+    "intro": {
+      "eyebrow": "Grundlagen",
+      "title": "Was ein Framework übernimmt",
+      "lead": "Diese Kernsysteme bringt praktisch jedes Framework mit – Scripts bauen darauf auf, statt sie neu zu erfinden.",
+      "systems": ["Jobs", "Inventar", "Banking", "Gangs", "Housing", "Fraktionen"]
+    },
+    "cards": {
+      "eyebrow": "Vergleich",
+      "title": "Die drei großen Optionen",
+      "lead": "Jedes Framework hat einen anderen Reifegrad und eine andere Zielgruppe.",
+      "items": [
+        {
+          "name": "ESX",
+          "badge": "Der Klassiker",
+          "description": "Der historische Platzhirsch mit dem größten Script-Katalog am Markt und sehr einsteigerfreundlich. Die Weiterentwicklung ist inzwischen aber weitgehend zum Stillstand gekommen.",
+          "bestFor": "Am besten für: bestehende ESX-Server, die nicht komplett neu aufgesetzt werden sollen."
+        },
+        {
+          "name": "QBCore",
+          "badge": "Der moderne Standard",
+          "description": "Seit 2020 der moderne Standard mit sauberem Code und besserer Performance als ESX, dazu ein riesiges Ökosystem an freien und Premium-Scripts. Auch hier ist die aktive Weiterentwicklung inzwischen ins Stocken geraten.",
+          "bestFor": "Am besten für: Server mit dem großen bestehenden QBCore-Script-Ökosystem."
+        },
+        {
+          "name": "Qbox",
+          "badge": "Aktiv gepflegt",
+          "description": "Ein Community-Fork von QBCore, der Modularität und moderne Lua-Praktiken (u.a. ox_lib) konsequent weiterführt – bei weitgehender Abwärtskompatibilität zu bestehenden QBCore-Ressourcen.",
+          "bestFor": "Am besten für: neue Server, die 2026 auf eine aktiv gepflegte Basis setzen wollen."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Im direkten Vergleich",
+      "headers": {
+        "name": "Framework",
+        "ecosystem": "Ökosystem",
+        "maintenance": "Wartungsstatus",
+        "recommendation": "Empfehlung"
+      },
+      "rows": [
+        {
+          "name": "ESX",
+          "ecosystem": "Sehr groß, viele ältere Scripts",
+          "maintenance": "Stagniert",
+          "recommendation": "Nur für bestehende Server"
+        },
+        {
+          "name": "QBCore",
+          "ecosystem": "Sehr groß, viel Premium-Content",
+          "maintenance": "Stagniert",
+          "recommendation": "Für bestehende QBCore-Server"
+        },
+        {
+          "name": "Qbox",
+          "ecosystem": "Wachsend, kompatibel zu QBCore",
+          "maintenance": "Aktiv",
+          "recommendation": "Empfohlen für neue Server 2026"
+        }
+      ]
+    },
+    "positioning": "Egal ob dein Server bereits auf ESX oder QBCore läuft oder du 2026 neu mit Qbox starten willst – ich entwickle Scripts und Anpassungen für alle drei Frameworks."
+  }
+}

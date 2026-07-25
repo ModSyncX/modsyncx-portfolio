@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "about": "Over mij",
+    "skills": "Vaardigheden",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Softwareontwikkelaar",
+    "title": "ModSyncX",
+    "subtitle": "FiveM Developer & Discord Bot Developer",
+    "description": "Ik bouw op maat gemaakte scripts voor FiveM-servers en Discord-bots die betrouwbaar draaien en netjes zijn opgebouwd. Van gameplaysystemen tot serverautomatisering.",
+    "ctaPrimary": "Neem contact op",
+    "ctaSecondary": "Bekijk vaardigheden",
+    "badge": "Beschikbaar voor nieuwe projecten",
+    "terminal": [
+      { "cmd": "whoami", "out": "ModSyncX" },
+      { "cmd": "role --show", "out": "FiveM Developer & Discord Bot Developer" },
+      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
+      { "cmd": "status", "out": "klaar voor nieuwe aanvragen" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Vaardigheden",
+    "title": "Wat ik doe",
+    "lead": "Een overzicht van de gebieden waar ik in thuis ben.",
+    "items": [
+      {
+        "title": "FiveM Developer",
+        "description": "Op maat gemaakte scripts, gameplaysystemen en serveraanpassingen voor FiveM — van frameworks tot unieke features."
+      },
+      {
+        "title": "Discord Bot Developer",
+        "description": "Bots voor moderatie, automatisering en communitybeheer, afgestemd op de specifieke server."
+      },
+      {
+        "title": "Lua",
+        "description": "Ruime ervaring met Lua binnen FiveM en scripting."
+      },
+      {
+        "title": "JavaScript & TypeScript",
+        "description": "Frontend- en backendontwikkeling met moderne, type-veilige JavaScript."
+      },
+      {
+        "title": "Python",
+        "description": "Automatisering, tools en backendlogica in Python."
+      },
+      {
+        "title": "Servers & automatisering",
+        "description": "Opzetten, configureren en automatiseren van servers en workflows."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Laten we praten",
+    "lead": "Of het nu gaat om een projectaanvraag of gewoon even hallo zeggen — ik hoor graag van je.",
+    "github": "GitHub",
+    "discord": "Discord",
+    "email": "E-mail"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden."
+  },
+  "lua": {
+    "nav": "Lua leren",
+    "back": "← Terug naar home",
+    "hero": {
+      "eyebrow": "Gids",
+      "title": "Lua begrijpen",
+      "description": "Een korte, praktische inleiding tot Lua — de taal waarin de meeste FiveM-scripts zijn geschreven. Hieronder kun je ook zelf code schrijven en direct laten controleren."
+    },
+    "sections": {
+      "eyebrow": "Basis",
+      "title": "Hoe Lua-scripts werken",
+      "lead": "Vier bouwstenen die in vrijwel elk FiveM-script terugkomen.",
+      "items": [
+        {
+          "title": "Variabelen",
+          "description": "`local` slaat waarden op die je script onthoudt — namen, getallen of true/false-waarden."
+        },
+        {
+          "title": "Voorwaarden",
+          "description": "Met `if / then / else / end` laat je je script verschillend reageren afhankelijk van de situatie."
+        },
+        {
+          "title": "Functies",
+          "description": "Een functie bundelt herbruikbare logica onder een naam die je overal in het script kunt aanroepen."
+        },
+        {
+          "title": "FiveM Events",
+          "description": "`RegisterCommand` en `TriggerClientEvent` zorgen ervoor dat server- en client-scripts met elkaar praten."
+        }
+      ]
+    },
+    "playground": {
+      "eyebrow": "Oefening",
+      "title": "Probeer het zelf",
+      "lead": "Schrijf de juiste code in het veld en klik op \"Controleren\" — je krijgt direct feedback.",
+      "checkButton": "Controleren",
+      "resetButton": "Reset",
+      "hintButton": "Hint tonen",
+      "correct": "Correct! ✓",
+      "incorrect": "Nog niet helemaal juist. ✗",
+      "challenges": [
+        {
+          "title": "Variabele declareren",
+          "instructions": "Declareer een lokale variabele met de naam `level` en de waarde `5`.",
+          "hint": "Gebruik het sleutelwoord `local`, gevolgd door de naam, een `=` en de waarde: local level = 5"
+        },
+        {
+          "title": "If-voorwaarde schrijven",
+          "instructions": "De variabele `cash` is al gegeven. Schrijf een `if`-voorwaarde die controleert of `cash` groter dan of gelijk aan 100 is.",
+          "hint": "Structuur: if cash >= 100 then ... end"
+        },
+        {
+          "title": "Functie definiëren",
+          "instructions": "Schrijf een lokale functie met de naam `heal` die één parameter accepteert.",
+          "hint": "Structuur: local function heal(player) ... end"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "eyebrow": "Projecten",
+    "title": "Waar ik aan gewerkt heb",
+    "lead": "Een kijkje in een echt project uit de praktijk.",
+    "ticketbot": {
+      "name": "Discord Ticket-bot",
+      "tagline": "Een compleet support- en communitybeheersysteem voor Discord",
+      "stack": "Node.js · discord.js v14 · MySQL",
+      "description": "Een uitgebreide Discord-bot voor community- en serverbeheer, gebouwd met discord.js v14. Meer dan 45 slash-commands dekken support-tickets, moderatie en communityfuncties — modulair opgedeeld in commands- en systems-modules.",
+      "features": [
+        "Ticketsysteem met meerdere categorieën (support, factie, development, teamsollicitaties e.d.)",
+        "Rollen- en rechtensysteem per ticketcategorie",
+        "Automatisch sluiten van inactieve tickets met waarschuwingsniveaus",
+        "HTML-transcriptopslag van afgesloten tickets",
+        "5-sterrenbeoordelingssysteem na afsluiten van een ticket",
+        "Moderatietools: warn, mute, ban, tempban, notities",
+        "TikTok Live- en Twitch-meldingen, polls, ranglijst"
+      ]
+    }
+  },
+  "frameworksTeaser": {
+    "eyebrow": "FiveM Frameworks",
+    "title": "ESX, QBCore of Qbox?",
+    "lead": "Een kort overzicht van hoe de drie grote FiveM-frameworks werken en van elkaar verschillen.",
+    "button": "Frameworks vergelijken"
+  },
+  "frameworks": {
+    "nav": "Frameworks",
+    "back": "← Terug naar home",
+    "hero": {
+      "eyebrow": "Gids",
+      "title": "ESX, QBCore & Qbox",
+      "description": "Een framework geeft een FiveM-server zijn kernsystemen — banen, inventaris, bankieren en meer — zodat elk script niet bij nul hoeft te beginnen. Ik ontwikkel voor alle drie de grote frameworks even goed."
+    },
+    "intro": {
+      "eyebrow": "Basis",
+      "title": "Wat een framework regelt",
+      "lead": "Vrijwel elk framework levert deze kernsystemen — scripts bouwen erop voort in plaats van ze opnieuw uit te vinden.",
+      "systems": ["Banen", "Inventaris", "Bankieren", "Bendes", "Huisvesting", "Facties"]
+    },
+    "cards": {
+      "eyebrow": "Vergelijking",
+      "title": "De drie grote opties",
+      "lead": "Elk framework heeft een ander volwassenheidsniveau en een andere doelgroep.",
+      "items": [
+        {
+          "name": "ESX",
+          "badge": "De klassieker",
+          "description": "De historische marktleider met de grootste scriptcatalogus en zeer beginnersvriendelijk. De ontwikkeling van nieuwe functies is echter grotendeels tot stilstand gekomen.",
+          "bestFor": "Het beste voor: bestaande ESX-servers die geen volledige rebuild willen."
+        },
+        {
+          "name": "QBCore",
+          "badge": "De moderne standaard",
+          "description": "Sinds 2020 de moderne standaard, met schonere code en betere prestaties dan ESX, plus een enorm ecosysteem aan gratis en premium scripts. Ook hier is actieve ontwikkeling grotendeels tot stilstand gekomen.",
+          "bestFor": "Het beste voor: servers gebouwd op het grote bestaande QBCore-scriptecosysteem."
+        },
+        {
+          "name": "Qbox",
+          "badge": "Actief onderhouden",
+          "description": "Een community-fork van QBCore die modulariteit en moderne Lua-praktijken (waaronder ox_lib) verder doorvoert, terwijl het grotendeels backwards compatible blijft met bestaande QBCore-resources.",
+          "bestFor": "Het beste voor: nieuwe servers in 2026 die een actief onderhouden basis willen."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Naast elkaar",
+      "headers": {
+        "name": "Framework",
+        "ecosystem": "Ecosysteem",
+        "maintenance": "Onderhoudsstatus",
+        "recommendation": "Aanbeveling"
+      },
+      "rows": [
+        {
+          "name": "ESX",
+          "ecosystem": "Zeer groot, vooral oudere scripts",
+          "maintenance": "Gestopt",
+          "recommendation": "Alleen voor bestaande servers"
+        },
+        {
+          "name": "QBCore",
+          "ecosystem": "Zeer groot, veel premium content",
+          "maintenance": "Gestopt",
+          "recommendation": "Voor bestaande QBCore-servers"
+        },
+        {
+          "name": "Qbox",
+          "ecosystem": "Groeiend, compatibel met QBCore",
+          "maintenance": "Actief",
+          "recommendation": "Aanbevolen voor nieuwe servers in 2026"
+        }
+      ]
+    },
+    "positioning": "Of je server nu al op ESX of QBCore draait, of je in 2026 fris wilt beginnen met Qbox — ik bouw scripts en aanpassingen voor alle drie de frameworks."
+  }
+}

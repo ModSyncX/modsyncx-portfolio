@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Desarrollador de software",
+    "title": "ModSyncX",
+    "subtitle": "Desarrollador de FiveM y bots de Discord",
+    "description": "Desarrollo scripts a medida para servidores FiveM y bots de Discord fiables y bien estructurados. Desde sistemas de gameplay hasta automatización de servidores.",
+    "ctaPrimary": "Contactar",
+    "ctaSecondary": "Ver habilidades",
+    "badge": "Disponible para nuevos proyectos",
+    "terminal": [
+      { "cmd": "whoami", "out": "ModSyncX" },
+      { "cmd": "role --show", "out": "Desarrollador de FiveM y bots de Discord" },
+      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
+      { "cmd": "status", "out": "listo para nuevas solicitudes" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Habilidades",
+    "title": "Lo que hago",
+    "lead": "Un resumen de las áreas en las que me muevo.",
+    "items": [
+      {
+        "title": "Desarrollador FiveM",
+        "description": "Scripts personalizados, sistemas de gameplay y personalización de servidores para FiveM, desde frameworks hasta funciones a medida."
+      },
+      {
+        "title": "Desarrollador de bots de Discord",
+        "description": "Bots para moderación, automatización y gestión de comunidades, adaptados a cada servidor."
+      },
+      {
+        "title": "Lua",
+        "description": "Sólida experiencia con Lua en el entorno de FiveM y scripting."
+      },
+      {
+        "title": "JavaScript y TypeScript",
+        "description": "Desarrollo frontend y backend con JavaScript moderno y tipado."
+      },
+      {
+        "title": "Python",
+        "description": "Automatización, herramientas y lógica de backend en Python."
+      },
+      {
+        "title": "Servidores y automatización",
+        "description": "Configuración y automatización de servidores y flujos de trabajo."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos",
+    "lead": "Ya sea para un proyecto o simplemente para saludar, me encantará saber de ti.",
+    "github": "GitHub",
+    "discord": "Discord",
+    "email": "Correo"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "lua": {
+    "nav": "Aprender Lua",
+    "back": "← Volver al inicio",
+    "hero": {
+      "eyebrow": "Guía",
+      "title": "Entender Lua",
+      "description": "Una introducción breve y práctica a Lua, el lenguaje en el que está escrita la mayoría de los scripts de FiveM. Más abajo también puedes escribir tu propio código y comprobarlo al instante."
+    },
+    "sections": {
+      "eyebrow": "Fundamentos",
+      "title": "Cómo funcionan los scripts de Lua",
+      "lead": "Cuatro elementos básicos presentes en casi todos los scripts de FiveM.",
+      "items": [
+        {
+          "title": "Variables",
+          "description": "`local` guarda valores que tu script recuerda: nombres, números o valores verdadero/falso."
+        },
+        {
+          "title": "Condicionales",
+          "description": "`if / then / else / end` permite que tu script reaccione de forma distinta según la situación."
+        },
+        {
+          "title": "Funciones",
+          "description": "Una función agrupa lógica reutilizable bajo un nombre que puedes llamar en cualquier parte del script."
+        },
+        {
+          "title": "Eventos de FiveM",
+          "description": "`RegisterCommand` y `TriggerClientEvent` permiten que los scripts de servidor y cliente se comuniquen."
+        }
+      ]
+    },
+    "playground": {
+      "eyebrow": "Práctica",
+      "title": "Pruébalo tú mismo",
+      "lead": "Escribe el código correspondiente en el campo y pulsa «Comprobar»: recibirás feedback al instante.",
+      "checkButton": "Comprobar",
+      "resetButton": "Reiniciar",
+      "hintButton": "Mostrar pista",
+      "correct": "¡Correcto! ✓",
+      "incorrect": "Todavía no es correcto. ✗",
+      "challenges": [
+        {
+          "title": "Declarar una variable",
+          "instructions": "Declara una variable local llamada `level` con el valor `5`.",
+          "hint": "Usa la palabra clave `local`, seguida del nombre, un `=` y el valor: local level = 5"
+        },
+        {
+          "title": "Escribir una condición if",
+          "instructions": "La variable `cash` ya está definida. Escribe una condición `if` que compruebe si `cash` es mayor o igual a 100.",
+          "hint": "Estructura: if cash >= 100 then ... end"
+        },
+        {
+          "title": "Definir una función",
+          "instructions": "Escribe una función local llamada `heal` que reciba un parámetro.",
+          "hint": "Estructura: local function heal(player) ... end"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "En qué he trabajado",
+    "lead": "Un vistazo a un proyecto real de la práctica.",
+    "ticketbot": {
+      "name": "Bot de tickets de Discord",
+      "tagline": "Un sistema completo de soporte y gestión de comunidad para Discord",
+      "stack": "Node.js · discord.js v14 · MySQL",
+      "description": "Un bot de Discord completo para la gestión de comunidad y servidor, construido con discord.js v14. Más de 45 comandos slash cubren tickets de soporte, moderación y funciones de comunidad, organizados en módulos de commands y systems.",
+      "features": [
+        "Sistema de tickets con varias categorías (soporte, facción, desarrollo, solicitudes de staff y más)",
+        "Sistema de roles y permisos por categoría de ticket",
+        "Cierre automático de tickets inactivos con niveles de aviso",
+        "Guardado de transcripciones HTML de tickets cerrados",
+        "Sistema de valoración de 5 estrellas tras cerrar el ticket",
+        "Herramientas de moderación: warn, mute, ban, tempban, notas",
+        "Notificaciones de TikTok Live y Twitch, encuestas, tabla de clasificación"
+      ]
+    }
+  },
+  "frameworksTeaser": {
+    "eyebrow": "Frameworks de FiveM",
+    "title": "¿ESX, QBCore o Qbox?",
+    "lead": "Un breve resumen de cómo funcionan y en qué se diferencian los tres grandes frameworks de FiveM.",
+    "button": "Comparar frameworks"
+  },
+  "frameworks": {
+    "nav": "Frameworks",
+    "back": "← Volver al inicio",
+    "hero": {
+      "eyebrow": "Guía",
+      "title": "ESX, QBCore y Qbox",
+      "description": "Un framework le da a un servidor de FiveM sus sistemas base — trabajos, inventario, banca y más — para que cada script no empiece de cero. Desarrollo por igual para los tres grandes frameworks."
+    },
+    "intro": {
+      "eyebrow": "Fundamentos",
+      "title": "Qué se encarga de hacer un framework",
+      "lead": "Casi todos los frameworks incluyen estos sistemas base — los scripts se apoyan en ellos en lugar de reinventarlos.",
+      "systems": ["Trabajos", "Inventario", "Banca", "Bandas", "Vivienda", "Facciones"]
+    },
+    "cards": {
+      "eyebrow": "Comparación",
+      "title": "Las tres grandes opciones",
+      "lead": "Cada framework tiene un nivel de madurez y un público objetivo diferente.",
+      "items": [
+        {
+          "name": "ESX",
+          "badge": "El clásico",
+          "description": "El líder histórico del mercado con el mayor catálogo de scripts y muy fácil para principiantes. El desarrollo de nuevas funciones, sin embargo, se ha estancado en gran medida.",
+          "bestFor": "Ideal para: servidores ESX existentes que no quieren una reconstrucción completa."
+        },
+        {
+          "name": "QBCore",
+          "badge": "El estándar moderno",
+          "description": "El estándar moderno desde 2020, con código más limpio y mejor rendimiento que ESX, además de un enorme ecosistema de scripts gratuitos y premium. El desarrollo activo también se ha estancado en gran medida.",
+          "bestFor": "Ideal para: servidores basados en el gran ecosistema de scripts de QBCore ya existente."
+        },
+        {
+          "name": "Qbox",
+          "badge": "Mantenimiento activo",
+          "description": "Un fork comunitario de QBCore que lleva más lejos la modularidad y las prácticas modernas de Lua (incluido ox_lib), manteniendo una compatibilidad amplia con los recursos de QBCore existentes.",
+          "bestFor": "Ideal para: servidores nuevos en 2026 que quieren una base con mantenimiento activo."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Frente a frente",
+      "headers": {
+        "name": "Framework",
+        "ecosystem": "Ecosistema",
+        "maintenance": "Estado de mantenimiento",
+        "recommendation": "Recomendación"
+      },
+      "rows": [
+        {
+          "name": "ESX",
+          "ecosystem": "Muy grande, scripts en su mayoría antiguos",
+          "maintenance": "Estancado",
+          "recommendation": "Solo para servidores existentes"
+        },
+        {
+          "name": "QBCore",
+          "ecosystem": "Muy grande, mucho contenido premium",
+          "maintenance": "Estancado",
+          "recommendation": "Para servidores QBCore existentes"
+        },
+        {
+          "name": "Qbox",
+          "ecosystem": "En crecimiento, compatible con QBCore",
+          "maintenance": "Activo",
+          "recommendation": "Recomendado para servidores nuevos en 2026"
+        }
+      ]
+    },
+    "positioning": "Ya sea que tu servidor funcione con ESX o QBCore, o que quieras empezar de cero con Qbox en 2026, desarrollo scripts y personalizaciones para los tres frameworks."
+  }
+}

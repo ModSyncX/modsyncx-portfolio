@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "eyebrow": "Yazılım Geliştirici",
+    "title": "ModSyncX",
+    "subtitle": "FiveM Geliştiricisi & Discord Bot Geliştiricisi",
+    "description": "FiveM sunucuları için özel scriptler ve güvenilir, temiz yapılandırılmış Discord botları geliştiriyorum. Oynanış sistemlerinden sunucu otomasyonuna kadar.",
+    "ctaPrimary": "İletişime geç",
+    "ctaSecondary": "Yetenekleri gör",
+    "badge": "Yeni projelere açığım",
+    "terminal": [
+      { "cmd": "whoami", "out": "ModSyncX" },
+      { "cmd": "role --show", "out": "FiveM Geliştiricisi & Discord Bot Geliştiricisi" },
+      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
+      { "cmd": "status", "out": "yeni taleplere hazır" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Yetkinlikler",
+    "title": "Neler yapıyorum",
+    "lead": "Çalıştığım alanlara genel bir bakış.",
+    "items": [
+      {
+        "title": "FiveM Geliştiricisi",
+        "description": "FiveM için özel scriptler, oynanış sistemleri ve sunucu özelleştirmeleri — framework'lerden özel özelliklere kadar."
+      },
+      {
+        "title": "Discord Bot Geliştiricisi",
+        "description": "Her sunucuya özel moderasyon, otomasyon ve topluluk yönetimi botları."
+      },
+      {
+        "title": "Lua",
+        "description": "FiveM ve scripting alanında sağlam Lua deneyimi."
+      },
+      {
+        "title": "JavaScript & TypeScript",
+        "description": "Modern, tip güvenli JavaScript ile frontend ve backend geliştirme."
+      },
+      {
+        "title": "Python",
+        "description": "Python ile otomasyon, araçlar ve backend mantığı."
+      },
+      {
+        "title": "Sunucular & Otomasyon",
+        "description": "Sunucuların ve iş akışlarının kurulumu, yapılandırılması ve otomasyonu."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "İletişim",
+    "title": "Konuşalım",
+    "lead": "İster bir proje talebi olsun ister sadece merhaba demek — senden haber almak isterim.",
+    "github": "GitHub",
+    "discord": "Discord",
+    "email": "E-posta"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  },
+  "lua": {
+    "nav": "Lua Öğren",
+    "back": "← Ana sayfaya dön",
+    "hero": {
+      "eyebrow": "Rehber",
+      "title": "Lua'yı Anlamak",
+      "description": "Çoğu FiveM scriptinin yazıldığı dil olan Lua'ya kısa ve pratik bir giriş. Aşağıda ayrıca kendi kodunu yazıp anında kontrol ettirebilirsin."
+    },
+    "sections": {
+      "eyebrow": "Temeller",
+      "title": "Lua scriptleri nasıl çalışır",
+      "lead": "Neredeyse her FiveM scriptinde karşına çıkan dört temel yapı taşı.",
+      "items": [
+        {
+          "title": "Değişkenler",
+          "description": "`local`, scriptinin hatırladığı değerleri saklar — isimler, sayılar veya true/false değerleri."
+        },
+        {
+          "title": "Koşullar",
+          "description": "`if / then / else / end` ile scriptin duruma göre farklı tepki vermesini sağlarsın."
+        },
+        {
+          "title": "Fonksiyonlar",
+          "description": "Bir fonksiyon, tekrar eden mantığı scriptin her yerinden çağırabileceğin bir isim altında toplar."
+        },
+        {
+          "title": "FiveM Olayları (Events)",
+          "description": "`RegisterCommand` ve `TriggerClientEvent` ile server ve client scriptleri birbiriyle konuşur."
+        }
+      ]
+    },
+    "playground": {
+      "eyebrow": "Alıştırma",
+      "title": "Kendin dene",
+      "lead": "İlgili kodu alana yaz ve \"Kontrol Et\"e tıkla — anında geri bildirim alırsın.",
+      "checkButton": "Kontrol Et",
+      "resetButton": "Sıfırla",
+      "hintButton": "İpucunu göster",
+      "correct": "Doğru! ✓",
+      "incorrect": "Henüz tam doğru değil. ✗",
+      "challenges": [
+        {
+          "title": "Değişken tanımla",
+          "instructions": "`level` adında, değeri `5` olan lokal bir değişken tanımla.",
+          "hint": "`local` anahtar kelimesini, ardından ismi, bir `=` ve değeri kullan: local level = 5"
+        },
+        {
+          "title": "If koşulu yaz",
+          "instructions": "`cash` değişkeni zaten tanımlı. `cash`'in 100'den büyük veya eşit olup olmadığını kontrol eden bir `if` koşulu yaz.",
+          "hint": "Yapı: if cash >= 100 then ... end"
+        },
+        {
+          "title": "Fonksiyon tanımla",
+          "instructions": "Bir parametre alan `heal` adında lokal bir fonksiyon yaz.",
+          "hint": "Yapı: local function heal(player) ... end"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "eyebrow": "Projeler",
+    "title": "Üzerinde çalıştıklarım",
+    "lead": "Pratikten gerçek bir projeye bakış.",
+    "ticketbot": {
+      "name": "Discord Ticket Botu",
+      "tagline": "Discord için eksiksiz bir destek ve topluluk yönetim sistemi",
+      "stack": "Node.js · discord.js v14 · MySQL",
+      "description": "discord.js v14 ile geliştirilmiş, topluluk ve sunucu yönetimi için kapsamlı bir Discord botu. 45'ten fazla slash komutu destek ticketlarını, moderasyonu ve topluluk özelliklerini kapsıyor — commands ve systems modüllerine ayrılmış şekilde.",
+      "features": [
+        "Birden çok kategoriye sahip ticket sistemi (destek, fraksiyon, geliştirme, ekip başvurusu vb.)",
+        "Ticket kategorisine göre rol ve yetki sistemi",
+        "Uyarı seviyeleriyle inaktif ticketların otomatik kapatılması",
+        "Kapatılan ticketlar için HTML transcript kaydı",
+        "Ticket kapandıktan sonra 5 yıldızlı değerlendirme sistemi",
+        "Moderasyon araçları: warn, mute, ban, tempban, notlar",
+        "TikTok Live & Twitch bildirimleri, anketler, lider tablosu"
+      ]
+    }
+  },
+  "frameworksTeaser": {
+    "eyebrow": "FiveM Framework'leri",
+    "title": "ESX, QBCore mu Qbox mu?",
+    "lead": "Üç büyük FiveM framework'ünün nasıl çalıştığına ve nasıl farklılaştığına kısa bir bakış.",
+    "button": "Framework'leri karşılaştır"
+  },
+  "frameworks": {
+    "nav": "Framework'ler",
+    "back": "← Ana sayfaya dön",
+    "hero": {
+      "eyebrow": "Rehber",
+      "title": "ESX, QBCore & Qbox",
+      "description": "Bir framework, bir FiveM sunucusuna temel sistemleri verir — işler, envanter, bankacılık ve daha fazlası — böylece her script sıfırdan başlamaz. Üç büyük framework için de eşit şekilde geliştirme yapıyorum."
+    },
+    "intro": {
+      "eyebrow": "Temeller",
+      "title": "Bir framework neyi üstlenir",
+      "lead": "Neredeyse her framework bu temel sistemleri sunar — scriptler bunları yeniden icat etmek yerine üzerine inşa edilir.",
+      "systems": ["İşler", "Envanter", "Bankacılık", "Çeteler", "Konut", "Fraksiyonlar"]
+    },
+    "cards": {
+      "eyebrow": "Karşılaştırma",
+      "title": "Üç büyük seçenek",
+      "lead": "Her framework'ün olgunluk seviyesi ve hedef kitlesi farklıdır.",
+      "items": [
+        {
+          "name": "ESX",
+          "badge": "Klasik olan",
+          "description": "En büyük script kataloğuna sahip, tarihsel lider ve yeni başlayanlar için oldukça uygun. Ancak yeni özellik geliştirmesi büyük ölçüde durdu.",
+          "bestFor": "En uygun olduğu durum: tamamen yeniden kurulmasını istemediğin mevcut ESX sunucuları."
+        },
+        {
+          "name": "QBCore",
+          "badge": "Modern standart",
+          "description": "2020'den beri modern standart; ESX'e göre daha temiz kod ve daha iyi performans sunuyor, üstüne devasa bir ücretsiz ve premium script ekosistemi var. Burada da aktif geliştirme büyük ölçüde durdu.",
+          "bestFor": "En uygun olduğu durum: mevcut büyük QBCore script ekosistemine sahip sunucular."
+        },
+        {
+          "name": "Qbox",
+          "badge": "Aktif olarak geliştiriliyor",
+          "description": "QBCore'un modülerliği ve modern Lua pratiklerini (ox_lib dahil) daha ileri götüren bir topluluk fork'u; buna rağmen mevcut QBCore kaynaklarıyla büyük ölçüde geriye dönük uyumlu.",
+          "bestFor": "En uygun olduğu durum: 2026'da aktif olarak geliştirilen bir temel isteyen yeni sunucular."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Yan yana karşılaştırma",
+      "headers": {
+        "name": "Framework",
+        "ecosystem": "Ekosistem",
+        "maintenance": "Bakım durumu",
+        "recommendation": "Öneri"
+      },
+      "rows": [
+        {
+          "name": "ESX",
+          "ecosystem": "Çok büyük, çoğunlukla eski scriptler",
+          "maintenance": "Durdu",
+          "recommendation": "Sadece mevcut sunucular için"
+        },
+        {
+          "name": "QBCore",
+          "ecosystem": "Çok büyük, çok sayıda premium içerik",
+          "maintenance": "Durdu",
+          "recommendation": "Mevcut QBCore sunucuları için"
+        },
+        {
+          "name": "Qbox",
+          "ecosystem": "Büyüyor, QBCore ile uyumlu",
+          "maintenance": "Aktif",
+          "recommendation": "2026'da yeni sunucular için önerilir"
+        }
+      ]
+    },
+    "positioning": "Sunucun ister ESX ister QBCore üzerinde çalışıyor olsun, ister 2026'da Qbox ile sıfırdan başlamak iste — her üç framework için de script ve özelleştirme geliştiriyorum."
+  }
+}
