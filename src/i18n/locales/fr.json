@@ -249,5 +249,16 @@
     "title": "Cette page n'existe pas",
     "description": "Le lien est incorrect ou la page a été déplacée. Retournez à l'accueil par ici.",
     "button": "Retour à l'accueil"
+  },
+  "terminal": {
+    "welcome": "Tapez 'help' pour voir la liste des commandes.",
+    "help": "Commandes disponibles :\n  help          afficher cette liste\n  about         aller à la section à propos\n  skills        aller aux compétences\n  projects      aller aux projets\n  contact       aller au contact\n  lua           ouvrir le guide Lua\n  frameworks    ouvrir le guide des frameworks\n  home          retour à l'accueil\n  theme         basculer clair/sombre\n  lang <code>   changer de langue (de, en, fr, es, tr, nl)\n  whoami        devinez\n  clear         effacer ce terminal",
+    "navigating": "→ navigation vers {{target}} …",
+    "themeToggled": "Thème changé.",
+    "langChanged": "Langue changée en {{code}}.",
+    "langUsage": "Utilisation : lang <de|en|fr|es|tr|nl>",
+    "sudo": "bien essayé. ceci est un site statique, pas un vrai shell.",
+    "unknown": "commande introuvable : {{cmd}} — tapez 'help' pour la liste des commandes.",
+    "placeholder": "tapez 'help' …"
   }
 }

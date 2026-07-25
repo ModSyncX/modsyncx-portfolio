@@ -540,3 +540,9 @@
   font-family: 'JetBrains Mono', monospace;
   color: var(--text-muted);
 }
+
+.footer-terminal-wrap {
+  padding: 32px 24px 0;
+  display: flex;
+  justify-content: center;
+}

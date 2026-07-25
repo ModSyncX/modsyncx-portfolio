@@ -249,5 +249,16 @@
     "title": "This page doesn't exist",
     "description": "The link is either wrong or the page has moved. Head back to the homepage from here.",
     "button": "Go to homepage"
+  },
+  "terminal": {
+    "welcome": "Type 'help' for a list of commands.",
+    "help": "Available commands:\n  help          show this list\n  about         jump to the about section\n  skills        jump to skills\n  projects      jump to projects\n  contact       jump to contact\n  lua           open the Lua guide\n  frameworks    open the frameworks guide\n  home          go to homepage\n  theme         toggle dark/light\n  lang <code>   switch language (de, en, fr, es, tr, nl)\n  whoami        guess what\n  clear         clear this terminal",
+    "navigating": "→ navigating to {{target}} …",
+    "themeToggled": "Theme toggled.",
+    "langChanged": "Language switched to {{code}}.",
+    "langUsage": "Usage: lang <de|en|fr|es|tr|nl>",
+    "sudo": "nice try. this is a static site, not a real shell.",
+    "unknown": "command not found: {{cmd}} — type 'help' for a list of commands.",
+    "placeholder": "type 'help' …"
   }
 }

@@ -249,5 +249,16 @@
     "title": "Bu sayfa mevcut değil",
     "description": "Bağlantı ya yanlış ya da sayfa taşınmış. Buradan ana sayfaya dönebilirsin.",
     "button": "Ana sayfaya git"
+  },
+  "terminal": {
+    "welcome": "Komut listesi için 'help' yaz.",
+    "help": "Kullanılabilir komutlar:\n  help          bu listeyi göster\n  about         hakkımda bölümüne git\n  skills        yeteneklere git\n  projects      projelere git\n  contact       iletişime git\n  lua           Lua rehberini aç\n  frameworks    framework rehberini aç\n  home          ana sayfaya git\n  theme         açık/koyu temayı değiştir\n  lang <code>   dili değiştir (de, en, fr, es, tr, nl)\n  whoami        tahmin et\n  clear         bu terminali temizle",
+    "navigating": "→ {{target}} sayfasına gidiliyor …",
+    "themeToggled": "Tema değiştirildi.",
+    "langChanged": "Dil {{code}} olarak değiştirildi.",
+    "langUsage": "Kullanım: lang <de|en|fr|es|tr|nl>",
+    "sudo": "iyi deneme. bu statik bir site, gerçek bir shell değil.",
+    "unknown": "komut bulunamadı: {{cmd}} — komut listesi için 'help' yaz.",
+    "placeholder": "'help' yaz …"
   }
 }

@@ -249,5 +249,16 @@
     "title": "Deze pagina bestaat niet",
     "description": "De link klopt niet of de pagina is verplaatst. Ga hier terug naar de homepage.",
     "button": "Naar de homepage"
+  },
+  "terminal": {
+    "welcome": "Typ 'help' voor een lijst met commando's.",
+    "help": "Beschikbare commando's:\n  help          deze lijst tonen\n  about         naar het over-mij-gedeelte\n  skills        naar vaardigheden\n  projects      naar projecten\n  contact       naar contact\n  lua           Lua-gids openen\n  frameworks    frameworks-gids openen\n  home          naar de homepage\n  theme         donker/licht wisselen\n  lang <code>   taal wisselen (de, en, fr, es, tr, nl)\n  whoami        raad eens\n  clear         deze terminal wissen",
+    "navigating": "→ navigeren naar {{target}} …",
+    "themeToggled": "Thema gewisseld.",
+    "langChanged": "Taal gewisseld naar {{code}}.",
+    "langUsage": "Gebruik: lang <de|en|fr|es|tr|nl>",
+    "sudo": "leuk geprobeerd. dit is een statische site, geen echte shell.",
+    "unknown": "commando niet gevonden: {{cmd}} — typ 'help' voor een lijst met commando's.",
+    "placeholder": "typ 'help' …"
   }
 }

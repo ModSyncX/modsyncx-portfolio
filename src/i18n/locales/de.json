@@ -249,5 +249,16 @@
     "title": "Diese Seite gibt es nicht",
     "description": "Der Link ist entweder falsch oder die Seite wurde verschoben. Zurück zur Startseite geht's hier lang.",
     "button": "Zur Startseite"
+  },
+  "terminal": {
+    "welcome": "Tippe 'help' für eine Liste der Befehle.",
+    "help": "Verfügbare Befehle:\n  help          diese Liste anzeigen\n  about         zum Abschnitt \"Über mich\" springen\n  skills        zu Skills springen\n  projects      zu Projekte springen\n  contact       zu Kontakt springen\n  lua           Lua-Guide öffnen\n  frameworks    Frameworks-Guide öffnen\n  home          zur Startseite\n  theme         Dark/Light umschalten\n  lang <code>   Sprache wechseln (de, en, fr, es, tr, nl)\n  whoami        rate mal\n  clear         Terminal leeren",
+    "navigating": "→ navigiere zu {{target}} …",
+    "themeToggled": "Theme umgeschaltet.",
+    "langChanged": "Sprache gewechselt zu {{code}}.",
+    "langUsage": "Verwendung: lang <de|en|fr|es|tr|nl>",
+    "sudo": "netter Versuch. Das ist eine statische Seite, keine echte Shell.",
+    "unknown": "Befehl nicht gefunden: {{cmd}} — tippe 'help' für eine Liste der Befehle.",
+    "placeholder": "tippe 'help' …"
   }
 }

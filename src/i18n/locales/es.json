@@ -249,5 +249,16 @@
     "title": "Esta página no existe",
     "description": "El enlace es incorrecto o la página se ha movido. Vuelve al inicio desde aquí.",
     "button": "Ir al inicio"
+  },
+  "terminal": {
+    "welcome": "Escribe 'help' para ver la lista de comandos.",
+    "help": "Comandos disponibles:\n  help          mostrar esta lista\n  about         ir a la sección sobre mí\n  skills        ir a habilidades\n  projects      ir a proyectos\n  contact       ir a contacto\n  lua           abrir la guía de Lua\n  frameworks    abrir la guía de frameworks\n  home          ir al inicio\n  theme         alternar claro/oscuro\n  lang <code>   cambiar idioma (de, en, fr, es, tr, nl)\n  whoami        adivina\n  clear         limpiar esta terminal",
+    "navigating": "→ navegando a {{target}} …",
+    "themeToggled": "Tema cambiado.",
+    "langChanged": "Idioma cambiado a {{code}}.",
+    "langUsage": "Uso: lang <de|en|fr|es|tr|nl>",
+    "sudo": "buen intento. esto es un sitio estático, no una shell real.",
+    "unknown": "comando no encontrado: {{cmd}} — escribe 'help' para ver la lista de comandos.",
+    "placeholder": "escribe 'help' …"
   }
 }
