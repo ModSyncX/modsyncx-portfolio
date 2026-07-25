@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import LearnLua from './pages/LearnLua'
 import Frameworks from './pages/Frameworks'
+import NotFound from './pages/NotFound'
 import './App.css'
 
 function ScrollToHash() {
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/lua" element={<LearnLua />} />
           <Route path="/frameworks" element={<Frameworks />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

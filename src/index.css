@@ -188,3 +188,21 @@ button {
     background-size: 40px 40px, 40px 40px, 100%;
   }
 }
+
+.not-found {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.not-found-code {
+  font-size: clamp(80px, 16vw, 160px);
+  color: var(--accent);
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.not-found .section-title,
+.not-found .section-lead {
+  margin-left: auto;
+  margin-right: auto;
+}

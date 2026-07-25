@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Reveal from '../components/Reveal'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import './Frameworks.css'
 
 interface FrameworkCard {
@@ -19,6 +20,7 @@ interface ComparisonRow {
 
 export default function Frameworks() {
   const { t } = useTranslation()
+  useDocumentTitle(`${t('frameworks.hero.title')} — ModSyncX`)
   const systems = t('frameworks.intro.systems', { returnObjects: true }) as string[]
   const cards = t('frameworks.cards.items', { returnObjects: true }) as FrameworkCard[]
   const rows = t('frameworks.comparison.rows', { returnObjects: true }) as ComparisonRow[]

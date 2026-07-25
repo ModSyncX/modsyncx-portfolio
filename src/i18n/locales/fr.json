@@ -57,7 +57,16 @@
     "lead": "Qu'il s'agisse d'une demande de projet ou simplement de dire bonjour, je serai ravi d'échanger avec vous.",
     "github": "GitHub",
     "discord": "Discord",
-    "email": "E-mail"
+    "email": "E-mail",
+    "form": {
+      "name": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours …",
+      "success": "Merci ! Votre message est bien arrivé — je vous répondrai bientôt.",
+      "error": "Une erreur s'est produite. N'hésitez pas à m'écrire directement par e-mail."
+    }
   },
   "footer": {
     "rights": "Tous droits réservés."
@@ -73,7 +82,7 @@
     "sections": {
       "eyebrow": "Fondamentaux",
       "title": "Comment fonctionnent les scripts Lua",
-      "lead": "Quatre briques de base présentes dans presque tous les scripts FiveM.",
+      "lead": "Six briques de base présentes dans presque tous les scripts FiveM.",
       "items": [
         {
           "title": "Variables",
@@ -82,6 +91,14 @@
         {
           "title": "Conditions",
           "description": "`if / then / else / end` permet à votre script de réagir différemment selon la situation."
+        },
+        {
+          "title": "Boucles",
+          "description": "`for ... do ... end` ou `ipairs()` permettent de parcourir des listes sans écrire chaque élément à la main."
+        },
+        {
+          "title": "Tables",
+          "description": "Une table (`{}`) est la structure de données centrale de Lua — elle peut stocker des listes et des champs nommés en même temps."
         },
         {
           "title": "Fonctions",
@@ -112,6 +129,16 @@
           "title": "Écrire une condition if",
           "instructions": "La variable `cash` est déjà définie. Écrivez une condition `if` qui vérifie si `cash` est supérieure ou égale à 100.",
           "hint": "Structure : if cash >= 100 then ... end"
+        },
+        {
+          "title": "Écrire une boucle for",
+          "instructions": "La table `players` est déjà définie. Écrivez une boucle `for` avec `ipairs` qui parcourt chaque élément.",
+          "hint": "Structure : for index, name in ipairs(players) do ... end"
+        },
+        {
+          "title": "Créer une table",
+          "instructions": "Créez une table locale nommée `player` avec le champ `cash = 500`.",
+          "hint": "Structure : local player = { cash = 500 }"
         },
         {
           "title": "Définir une fonction",
@@ -216,5 +243,11 @@
       ]
     },
     "positioning": "Que votre serveur tourne déjà sous ESX ou QBCore, ou que vous vouliez repartir de zéro avec Qbox en 2026 — je développe des scripts et des personnalisations pour les trois frameworks."
+  },
+  "notFound": {
+    "eyebrow": "Erreur 404",
+    "title": "Cette page n'existe pas",
+    "description": "Le lien est incorrect ou la page a été déplacée. Retournez à l'accueil par ici.",
+    "button": "Retour à l'accueil"
   }
 }

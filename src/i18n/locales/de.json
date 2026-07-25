@@ -57,7 +57,16 @@
     "lead": "Ob Projekt-Anfrage oder einfach nur Hallo sagen – ich freue mich über Nachrichten.",
     "github": "GitHub",
     "discord": "Discord",
-    "email": "E-Mail"
+    "email": "E-Mail",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet …",
+      "success": "Danke! Deine Nachricht ist angekommen – ich melde mich bald.",
+      "error": "Das hat leider nicht geklappt. Schreib mir gerne direkt per E-Mail."
+    }
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
@@ -73,7 +82,7 @@
     "sections": {
       "eyebrow": "Grundlagen",
       "title": "Wie Lua-Scripte funktionieren",
-      "lead": "Vier Bausteine, die in praktisch jedem FiveM-Script vorkommen.",
+      "lead": "Sechs Bausteine, die in praktisch jedem FiveM-Script vorkommen.",
       "items": [
         {
           "title": "Variablen",
@@ -82,6 +91,14 @@
         {
           "title": "Bedingungen",
           "description": "Mit `if / then / else / end` lässt du dein Script je nach Situation unterschiedlich reagieren."
+        },
+        {
+          "title": "Schleifen",
+          "description": "Mit `for ... do ... end` oder `ipairs()` gehst du Listen durch, ohne jeden Eintrag einzeln aufzuschreiben."
+        },
+        {
+          "title": "Tabellen",
+          "description": "Eine Tabelle (`{}`) ist Lua's zentrale Datenstruktur – sie kann Listen und benannte Felder gleichzeitig speichern."
         },
         {
           "title": "Funktionen",
@@ -112,6 +129,16 @@
           "title": "If-Bedingung schreiben",
           "instructions": "Die Variable `cash` ist bereits vorgegeben. Schreibe eine `if`-Bedingung, die prüft, ob `cash` größer oder gleich 100 ist.",
           "hint": "Struktur: if cash >= 100 then ... end"
+        },
+        {
+          "title": "For-Schleife schreiben",
+          "instructions": "Die Tabelle `players` ist bereits vorgegeben. Schreibe eine `for`-Schleife mit `ipairs`, die jeden Eintrag durchgeht.",
+          "hint": "Struktur: for index, name in ipairs(players) do ... end"
+        },
+        {
+          "title": "Tabelle erstellen",
+          "instructions": "Erstelle eine lokale Tabelle namens `player` mit dem Feld `cash = 500`.",
+          "hint": "Struktur: local player = { cash = 500 }"
         },
         {
           "title": "Funktion definieren",
@@ -216,5 +243,11 @@
       ]
     },
     "positioning": "Egal ob dein Server bereits auf ESX oder QBCore läuft oder du 2026 neu mit Qbox starten willst – ich entwickle Scripts und Anpassungen für alle drei Frameworks."
+  },
+  "notFound": {
+    "eyebrow": "Fehler 404",
+    "title": "Diese Seite gibt es nicht",
+    "description": "Der Link ist entweder falsch oder die Seite wurde verschoben. Zurück zur Startseite geht's hier lang.",
+    "button": "Zur Startseite"
   }
 }

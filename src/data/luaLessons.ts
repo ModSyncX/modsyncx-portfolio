@@ -26,6 +26,31 @@ else
 end`,
   },
   {
+    id: 'loops',
+    filename: 'loops.lua',
+    code: `local players = {"Nova", "Ari", "Kim"}
+
+for i = 1, #players do
+  print(i, players[i])
+end
+
+for index, name in ipairs(players) do
+  print(index, name)
+end`,
+  },
+  {
+    id: 'tables',
+    filename: 'tables.lua',
+    code: `local player = {
+  name = "Nova",
+  cash = 500,
+  jobs = {"police", "mechanic"}
+}
+
+print(player.name, player.cash)
+print(player.jobs[1])`,
+  },
+  {
     id: 'functions',
     filename: 'functions.lua',
     code: `local function heal(player, amount)

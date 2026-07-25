@@ -57,7 +57,16 @@
     "lead": "Of het nu gaat om een projectaanvraag of gewoon even hallo zeggen — ik hoor graag van je.",
     "github": "GitHub",
     "discord": "Discord",
-    "email": "E-mail"
+    "email": "E-mail",
+    "form": {
+      "name": "Naam",
+      "email": "E-mail",
+      "message": "Bericht",
+      "send": "Bericht versturen",
+      "sending": "Bezig met versturen …",
+      "success": "Bedankt! Je bericht is aangekomen — ik neem snel contact op.",
+      "error": "Er ging iets mis. Mail me gerust rechtstreeks."
+    }
   },
   "footer": {
     "rights": "Alle rechten voorbehouden."
@@ -73,7 +82,7 @@
     "sections": {
       "eyebrow": "Basis",
       "title": "Hoe Lua-scripts werken",
-      "lead": "Vier bouwstenen die in vrijwel elk FiveM-script terugkomen.",
+      "lead": "Zes bouwstenen die in vrijwel elk FiveM-script terugkomen.",
       "items": [
         {
           "title": "Variabelen",
@@ -82,6 +91,14 @@
         {
           "title": "Voorwaarden",
           "description": "Met `if / then / else / end` laat je je script verschillend reageren afhankelijk van de situatie."
+        },
+        {
+          "title": "Lussen",
+          "description": "Met `for ... do ... end` of `ipairs()` doorloop je lijsten zonder elk item met de hand te schrijven."
+        },
+        {
+          "title": "Tabellen",
+          "description": "Een tabel (`{}`) is Lua's centrale datastructuur — hij kan lijsten en benoemde velden tegelijk opslaan."
         },
         {
           "title": "Functies",
@@ -112,6 +129,16 @@
           "title": "If-voorwaarde schrijven",
           "instructions": "De variabele `cash` is al gegeven. Schrijf een `if`-voorwaarde die controleert of `cash` groter dan of gelijk aan 100 is.",
           "hint": "Structuur: if cash >= 100 then ... end"
+        },
+        {
+          "title": "For-lus schrijven",
+          "instructions": "De tabel `players` is al gegeven. Schrijf een `for`-lus met `ipairs` die elk item doorloopt.",
+          "hint": "Structuur: for index, name in ipairs(players) do ... end"
+        },
+        {
+          "title": "Tabel maken",
+          "instructions": "Maak een lokale tabel met de naam `player` met het veld `cash = 500`.",
+          "hint": "Structuur: local player = { cash = 500 }"
         },
         {
           "title": "Functie definiëren",
@@ -216,5 +243,11 @@
       ]
     },
     "positioning": "Of je server nu al op ESX of QBCore draait, of je in 2026 fris wilt beginnen met Qbox — ik bouw scripts en aanpassingen voor alle drie de frameworks."
+  },
+  "notFound": {
+    "eyebrow": "Fout 404",
+    "title": "Deze pagina bestaat niet",
+    "description": "De link klopt niet of de pagina is verplaatst. Ga hier terug naar de homepage.",
+    "button": "Naar de homepage"
   }
 }

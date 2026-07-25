@@ -57,7 +57,16 @@
     "lead": "Ya sea para un proyecto o simplemente para saludar, me encantará saber de ti.",
     "github": "GitHub",
     "discord": "Discord",
-    "email": "Correo"
+    "email": "Correo",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje",
+      "send": "Enviar mensaje",
+      "sending": "Enviando …",
+      "success": "¡Gracias! Tu mensaje ha llegado — te responderé pronto.",
+      "error": "Algo salió mal. Escríbeme directamente por correo si lo prefieres."
+    }
   },
   "footer": {
     "rights": "Todos los derechos reservados."
@@ -73,7 +82,7 @@
     "sections": {
       "eyebrow": "Fundamentos",
       "title": "Cómo funcionan los scripts de Lua",
-      "lead": "Cuatro elementos básicos presentes en casi todos los scripts de FiveM.",
+      "lead": "Seis elementos básicos presentes en casi todos los scripts de FiveM.",
       "items": [
         {
           "title": "Variables",
@@ -82,6 +91,14 @@
         {
           "title": "Condicionales",
           "description": "`if / then / else / end` permite que tu script reaccione de forma distinta según la situación."
+        },
+        {
+          "title": "Bucles",
+          "description": "`for ... do ... end` o `ipairs()` te permiten recorrer listas sin escribir cada elemento a mano."
+        },
+        {
+          "title": "Tablas",
+          "description": "Una tabla (`{}`) es la estructura de datos central de Lua: puede almacenar listas y campos con nombre al mismo tiempo."
         },
         {
           "title": "Funciones",
@@ -112,6 +129,16 @@
           "title": "Escribir una condición if",
           "instructions": "La variable `cash` ya está definida. Escribe una condición `if` que compruebe si `cash` es mayor o igual a 100.",
           "hint": "Estructura: if cash >= 100 then ... end"
+        },
+        {
+          "title": "Escribir un bucle for",
+          "instructions": "La tabla `players` ya está definida. Escribe un bucle `for` con `ipairs` que recorra cada elemento.",
+          "hint": "Estructura: for index, name in ipairs(players) do ... end"
+        },
+        {
+          "title": "Crear una tabla",
+          "instructions": "Crea una tabla local llamada `player` con el campo `cash = 500`.",
+          "hint": "Estructura: local player = { cash = 500 }"
         },
         {
           "title": "Definir una función",
@@ -216,5 +243,11 @@
       ]
     },
     "positioning": "Ya sea que tu servidor funcione con ESX o QBCore, o que quieras empezar de cero con Qbox en 2026, desarrollo scripts y personalizaciones para los tres frameworks."
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Esta página no existe",
+    "description": "El enlace es incorrecto o la página se ha movido. Vuelve al inicio desde aquí.",
+    "button": "Ir al inicio"
   }
 }

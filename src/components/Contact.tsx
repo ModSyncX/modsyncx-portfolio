@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import Reveal from './Reveal'
+import ContactForm from './ContactForm'
 
 const GITHUB_URL = 'https://github.com/ModSyncX'
 // TODO: echten Discord-Invite/Profil-Link eintragen, sobald vorhanden.
@@ -67,6 +68,10 @@ export default function Contact() {
             </span>
             {t('contact.email')}
           </a>
+        </Reveal>
+
+        <Reveal delay={200} className="contact-form-wrap">
+          <ContactForm />
         </Reveal>
       </div>
     </section>

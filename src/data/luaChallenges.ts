@@ -17,6 +17,19 @@ export const luaChallenges: LuaChallenge[] = [
       /\bif\s+cash\s*>=\s*100\s+then\b/.test(code) && /\bend\b/.test(code),
   },
   {
+    id: 'for-loop',
+    starter: 'local players = {"Nova", "Ari", "Kim"}\n\n-- Schreibe deinen Code hier\n',
+    validate: (code) =>
+      /\bfor\s+\w+\s*,\s*\w+\s+in\s+ipairs\s*\(\s*players\s*\)\s+do\b/.test(code) &&
+      /\bend\b/.test(code),
+  },
+  {
+    id: 'table-create',
+    starter: '-- Schreibe deinen Code hier\n',
+    validate: (code) =>
+      /\blocal\s+player\s*=\s*\{/.test(code) && /\bcash\s*=\s*500\b/.test(code),
+  },
+  {
     id: 'function-def',
     starter: '-- Schreibe deinen Code hier\n',
     validate: (code) =>

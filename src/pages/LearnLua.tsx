@@ -5,6 +5,7 @@ import CodeBlock from '../components/CodeBlock'
 import CodePlayground from '../components/CodePlayground'
 import { luaLessons } from '../data/luaLessons'
 import { luaChallenges } from '../data/luaChallenges'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import './LearnLua.css'
 
 interface LessonText {
@@ -20,6 +21,7 @@ interface ChallengeText {
 
 export default function LearnLua() {
   const { t } = useTranslation()
+  useDocumentTitle(`${t('lua.hero.title')} — ModSyncX`)
   const lessonTexts = t('lua.sections.items', { returnObjects: true }) as LessonText[]
   const challengeTexts = t('lua.playground.challenges', { returnObjects: true }) as ChallengeText[]
 

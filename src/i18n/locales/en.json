@@ -57,7 +57,16 @@
     "lead": "Whether it's a project inquiry or just saying hi — I'd love to hear from you.",
     "github": "GitHub",
     "discord": "Discord",
-    "email": "Email"
+    "email": "Email",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending …",
+      "success": "Thanks! Your message has arrived — I'll get back to you soon.",
+      "error": "Something went wrong. Feel free to email me directly instead."
+    }
   },
   "footer": {
     "rights": "All rights reserved."
@@ -73,7 +82,7 @@
     "sections": {
       "eyebrow": "Basics",
       "title": "How Lua scripts work",
-      "lead": "Four building blocks that show up in almost every FiveM script.",
+      "lead": "Six building blocks that show up in almost every FiveM script.",
       "items": [
         {
           "title": "Variables",
@@ -82,6 +91,14 @@
         {
           "title": "Conditionals",
           "description": "`if / then / else / end` lets your script react differently depending on the situation."
+        },
+        {
+          "title": "Loops",
+          "description": "`for ... do ... end` or `ipairs()` let you go through lists without writing out every entry by hand."
+        },
+        {
+          "title": "Tables",
+          "description": "A table (`{}`) is Lua's central data structure — it can store lists and named fields at the same time."
         },
         {
           "title": "Functions",
@@ -112,6 +129,16 @@
           "title": "Write an if statement",
           "instructions": "The variable `cash` is already given. Write an `if` statement that checks whether `cash` is greater than or equal to 100.",
           "hint": "Structure: if cash >= 100 then ... end"
+        },
+        {
+          "title": "Write a for loop",
+          "instructions": "The table `players` is already given. Write a `for` loop using `ipairs` that goes through every entry.",
+          "hint": "Structure: for index, name in ipairs(players) do ... end"
+        },
+        {
+          "title": "Create a table",
+          "instructions": "Create a local table named `player` with the field `cash = 500`.",
+          "hint": "Structure: local player = { cash = 500 }"
         },
         {
           "title": "Define a function",
@@ -216,5 +243,11 @@
       ]
     },
     "positioning": "Whether your server already runs on ESX or QBCore, or you want to start fresh with Qbox in 2026 — I build scripts and customizations for all three frameworks."
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "This page doesn't exist",
+    "description": "The link is either wrong or the page has moved. Head back to the homepage from here.",
+    "button": "Go to homepage"
   }
 }

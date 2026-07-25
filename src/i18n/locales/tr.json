@@ -57,7 +57,16 @@
     "lead": "İster bir proje talebi olsun ister sadece merhaba demek — senden haber almak isterim.",
     "github": "GitHub",
     "discord": "Discord",
-    "email": "E-posta"
+    "email": "E-posta",
+    "form": {
+      "name": "İsim",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "send": "Mesajı gönder",
+      "sending": "Gönderiliyor …",
+      "success": "Teşekkürler! Mesajın ulaştı — yakında dönüş yapacağım.",
+      "error": "Bir şeyler ters gitti. Bana doğrudan e-posta ile de yazabilirsin."
+    }
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."
@@ -73,7 +82,7 @@
     "sections": {
       "eyebrow": "Temeller",
       "title": "Lua scriptleri nasıl çalışır",
-      "lead": "Neredeyse her FiveM scriptinde karşına çıkan dört temel yapı taşı.",
+      "lead": "Neredeyse her FiveM scriptinde karşına çıkan altı temel yapı taşı.",
       "items": [
         {
           "title": "Değişkenler",
@@ -82,6 +91,14 @@
         {
           "title": "Koşullar",
           "description": "`if / then / else / end` ile scriptin duruma göre farklı tepki vermesini sağlarsın."
+        },
+        {
+          "title": "Döngüler",
+          "description": "`for ... do ... end` veya `ipairs()` ile her elemanı tek tek yazmadan listelerde gezinebilirsin."
+        },
+        {
+          "title": "Tablolar",
+          "description": "Bir tablo (`{}`), Lua'nın temel veri yapısıdır — aynı anda hem liste hem de isimlendirilmiş alanlar saklayabilir."
         },
         {
           "title": "Fonksiyonlar",
@@ -112,6 +129,16 @@
           "title": "If koşulu yaz",
           "instructions": "`cash` değişkeni zaten tanımlı. `cash`'in 100'den büyük veya eşit olup olmadığını kontrol eden bir `if` koşulu yaz.",
           "hint": "Yapı: if cash >= 100 then ... end"
+        },
+        {
+          "title": "For döngüsü yaz",
+          "instructions": "`players` tablosu zaten tanımlı. Her elemanı gezen, `ipairs` kullanan bir `for` döngüsü yaz.",
+          "hint": "Yapı: for index, name in ipairs(players) do ... end"
+        },
+        {
+          "title": "Tablo oluştur",
+          "instructions": "`cash = 500` alanına sahip, `player` adında lokal bir tablo oluştur.",
+          "hint": "Yapı: local player = { cash = 500 }"
         },
         {
           "title": "Fonksiyon tanımla",
@@ -216,5 +243,11 @@
       ]
     },
     "positioning": "Sunucun ister ESX ister QBCore üzerinde çalışıyor olsun, ister 2026'da Qbox ile sıfırdan başlamak iste — her üç framework için de script ve özelleştirme geliştiriyorum."
+  },
+  "notFound": {
+    "eyebrow": "Hata 404",
+    "title": "Bu sayfa mevcut değil",
+    "description": "Bağlantı ya yanlış ya da sayfa taşınmış. Buradan ana sayfaya dönebilirsin.",
+    "button": "Ana sayfaya git"
   }
 }
