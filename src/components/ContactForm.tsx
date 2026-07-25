@@ -1,8 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 
-// TODO: echten Formspree-Endpoint eintragen, sobald das Formular auf formspree.io angelegt ist.
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_ME'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xqergnpe'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
