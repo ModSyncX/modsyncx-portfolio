@@ -5,6 +5,7 @@ import CodeBlock from '../components/CodeBlock'
 import CodePlayground from '../components/CodePlayground'
 import { luaLessons } from '../data/luaLessons'
 import { luaChallenges } from '../data/luaChallenges'
+import { applyVars } from '../utils/applyVars'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import './LearnLua.css'
 
@@ -20,10 +21,12 @@ interface ChallengeText {
 }
 
 export default function LearnLua() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   useDocumentTitle(`${t('lua.hero.title')} — ModSyncX`)
   const lessonTexts = t('lua.sections.items', { returnObjects: true }) as LessonText[]
   const challengeTexts = t('lua.playground.challenges', { returnObjects: true }) as ChallengeText[]
+  // Übersetzbare Strings/Kommentare in den Lua-Code-Fenstern (siehe lua.code).
+  const codeVars = t('lua.code', { returnObjects: true }) as Record<string, string>
 
   return (
     <>
@@ -67,7 +70,7 @@ export default function LearnLua() {
                     <h3>{text.title}</h3>
                     <p>{text.description}</p>
                   </div>
-                  <CodeBlock filename={lesson.filename} code={lesson.code} />
+                  <CodeBlock filename={lesson.filename} code={applyVars(lesson.code, codeVars)} />
                 </Reveal>
               )
             })}
@@ -97,8 +100,10 @@ export default function LearnLua() {
                   <h3>{text.title}</h3>
                   <p className="challenge-instructions">{text.instructions}</p>
                   <CodePlayground
+                    key={i18n.language}
                     filename={`challenge-${index + 1}.lua`}
                     challenge={challenge}
+                    starter={applyVars(challenge.starter, codeVars)}
                     checkLabel={t('lua.playground.checkButton')}
                     resetLabel={t('lua.playground.resetButton')}
                     hintLabel={t('lua.playground.hintButton')}

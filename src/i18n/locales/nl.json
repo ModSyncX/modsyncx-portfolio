@@ -14,10 +14,22 @@
     "ctaSecondary": "Bekijk vaardigheden",
     "badge": "Beschikbaar voor nieuwe projecten",
     "terminal": [
-      { "cmd": "whoami", "out": "ModSyncX" },
-      { "cmd": "role --show", "out": "FiveM Developer & Discord Bot Developer" },
-      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
-      { "cmd": "status", "out": "klaar voor nieuwe aanvragen" }
+      {
+        "cmd": "whoami",
+        "out": "ModSyncX"
+      },
+      {
+        "cmd": "role --show",
+        "out": "FiveM Developer & Discord Bot Developer"
+      },
+      {
+        "cmd": "stack --list",
+        "out": "Lua · TypeScript · Python"
+      },
+      {
+        "cmd": "status",
+        "out": "klaar voor nieuwe aanvragen"
+      }
     ]
   },
   "skills": {
@@ -146,6 +158,12 @@
           "hint": "Structuur: local function heal(player) ... end"
         }
       ]
+    },
+    "code": {
+      "canBuy": "Aankoop mogelijk",
+      "notEnough": "Niet genoeg geld",
+      "playerHealed": "Speler is genezen",
+      "writeHere": "Schrijf je code hier"
     }
   },
   "projects": {
@@ -186,7 +204,14 @@
       "eyebrow": "Basis",
       "title": "Wat een framework regelt",
       "lead": "Vrijwel elk framework levert deze kernsystemen — scripts bouwen erop voort in plaats van ze opnieuw uit te vinden.",
-      "systems": ["Banen", "Inventaris", "Bankieren", "Bendes", "Huisvesting", "Facties"]
+      "systems": [
+        "Banen",
+        "Inventaris",
+        "Bankieren",
+        "Bendes",
+        "Huisvesting",
+        "Facties"
+      ]
     },
     "cards": {
       "eyebrow": "Vergelijking",
@@ -252,7 +277,7 @@
   },
   "terminal": {
     "welcome": "Typ 'help' voor een lijst met commando's.",
-    "help": "Beschikbare commando's:\n  help          deze lijst tonen\n  about         naar het over-mij-gedeelte\n  skills        naar vaardigheden\n  projects      naar projecten\n  contact       naar contact\n  lua           Lua-gids openen\n  frameworks    frameworks-gids openen\n  home          naar de homepage\n  theme         donker/licht wisselen\n  lang <code>   taal wisselen (de, en, fr, es, tr, nl)\n  whoami        raad eens\n  clear         deze terminal wissen",
+    "help": "Beschikbare commando's:\n  help          deze lijst tonen\n  about         naar de over-sectie\n  skills        naar skills\n  projects      naar projecten\n  contact       naar contact\n  lua           de Lua-gids openen\n  frameworks    de frameworks-gids openen\n  server        de server-gids openen\n  home          naar de homepage\n  ls            pagina's tonen\n  stack         techstack tonen\n  echo <tekst>  tekst tonen\n  history       ingevoerde commando's tonen\n  banner        het logo tonen\n  github        GitHub openen\n  email         e-mail tonen\n  date          huidige datum tonen\n  theme         licht/donker wisselen\n  lang <code>   taal wisselen (de, en, fr, es, tr, nl)\n  whoami        raad eens\n  clear         de terminal leegmaken",
     "navigating": "→ navigeren naar {{target}} …",
     "themeToggled": "Thema gewisseld.",
     "langChanged": "Taal gewisseld naar {{code}}.",
@@ -260,5 +285,129 @@
     "sudo": "leuk geprobeerd. dit is een statische site, geen echte shell.",
     "unknown": "commando niet gevonden: {{cmd}} — typ 'help' voor een lijst met commando's.",
     "placeholder": "typ 'help' …"
+  },
+  "server": {
+    "nav": "Server",
+    "back": "← Terug naar home",
+    "hero": {
+      "eyebrow": "Gids",
+      "title": "Zet je eigen server op",
+      "description": "Je eigen FiveM-server opzetten gaat sneller dan velen denken. Deze gids neemt je mee van het downloaden van de server-artifacts tot je eerste start – voor Windows en Linux, inclusief de valkuilen waar beginners meestal in trappen."
+    },
+    "requirements": {
+      "eyebrow": "Voordat je begint",
+      "title": "Wat je nodig hebt",
+      "lead": "Of het nu Windows of Linux is – zonder deze vier dingen kom je niet van start.",
+      "items": [
+        {
+          "label": "Hardware",
+          "detail": "Een machine of VPS met minstens 4 GB RAM en een moderne CPU. Je eigen pc volstaat voor tests; voor continu draaien huur je een dedicated of virtuele server."
+        },
+        {
+          "label": "Cfx.re-account",
+          "detail": "Een gratis account op portal.cfx.re. Daar maak je de licentiesleutel aan waar de server niet zonder start."
+        },
+        {
+          "label": "Git",
+          "detail": "Om de server-data basisresources te klonen. Op Windows via git-scm.com, op Linux via de pakketbeheerder."
+        },
+        {
+          "label": "Open poort",
+          "detail": "Poort 30120 (TCP en UDP) moet in firewall en router opengezet zijn zodat andere spelers kunnen verbinden."
+        }
+      ]
+    },
+    "setup": {
+      "eyebrow": "Stap voor stap",
+      "title": "Van download naar draaiende server",
+      "lead": "Vijf stappen tot je eerste start. Wissel tussen Windows en Linux – de commando's passen zich aan.",
+      "windowsLabel": "Windows",
+      "linuxLabel": "Linux",
+      "note": "Let op: Cfx.re levert de Linux-versie alleen als \"courtesy port\" – bugfixes komen eerst op Windows. Om te beginnen is Windows meestal de rustigere weg.",
+      "windows": [
+        {
+          "title": "Artifacts downloaden",
+          "body": "Pak de huidige build met het label \"recommended\" van de Server Download-pagina en pak hem met 7-Zip of WinRAR uit naar C:\\FXServer\\server. Neem nooit de allernieuwste build – die kan instabiel zijn."
+        },
+        {
+          "title": "server-data klonen",
+          "body": "De basisresources (chat, spawnmanager, mapmanager …) staan in een Git-repo. Kloon ze in een aparte map naast de artifacts."
+        },
+        {
+          "title": "Licentiesleutel aanmaken",
+          "body": "Log in op portal.cfx.re en maak een gratis serversleutel aan. Die zet je zo in server.cfg – en pusht hem nooit naar een openbare repo."
+        },
+        {
+          "title": "server.cfg aanmaken",
+          "body": "server.cfg is het hart van je server: poorten, naam, slots, licentie en welke resources starten. Maak hem aan in de server-data-map."
+        },
+        {
+          "title": "Server starten",
+          "body": "Ga naar de server-data-map en start FXServer.exe met je config. txAdmin draait automatisch mee – open localhost:40120 in de browser om de server via een interface te beheren."
+        }
+      ],
+      "linux": [
+        {
+          "title": "Pakketten & artifacts installeren",
+          "body": "Installeer Git en xz-utils, maak de mapstructuur aan en pak de gedownloade Linux-build (fx.tar.xz) uit."
+        },
+        {
+          "title": "server-data klonen",
+          "body": "Kloon de basisresources in een aparte map naast de server-binaries."
+        },
+        {
+          "title": "Licentiesleutel aanmaken",
+          "body": "Maak een gratis sleutel aan op portal.cfx.re. Hij komt in server.cfg en hoort nooit in een openbare repo."
+        },
+        {
+          "title": "server.cfg aanmaken",
+          "body": "Poorten, naam, slots, licentie en startresources – alles komt in server.cfg in de server-data-map."
+        },
+        {
+          "title": "Server starten",
+          "body": "Start de server via run.sh. Voor continu draaien stop je hem in een screen- of tmux-sessie (of een systemd-service) zodat hij blijft draaien nadat je uitlogt."
+        }
+      ],
+      "snippets": {
+        "structureFile": "mapstructuur",
+        "structExtract": "# artifacts hier uitpakken",
+        "structNext": "# volgt in stap 2",
+        "licLine1": "# 1. Log in op https://portal.cfx.re",
+        "licLine2": "# 2. \"New server key\" -> kopieer de sleutel",
+        "licLine3": "# 3. Zet hem in server.cfg:",
+        "hostname": "Mijn eerste FiveM-server",
+        "linuxDownload": "# download fx.tar.xz van de Server Download-pagina, daarna:",
+        "persistComment": "# actief houden met screen:",
+        "detachComment": "# Ctrl+A, dan D om los te koppelen"
+      }
+    },
+    "pitfalls": {
+      "eyebrow": "Let op",
+      "title": "Veelgemaakte fouten",
+      "items": [
+        {
+          "title": "Altijd de \"recommended\" build",
+          "body": "De nieuwste artifact-build is vaak bleeding edge. Voor een stabiele server kies je die groen gemarkeerd als \"recommended\"."
+        },
+        {
+          "title": "De licentiesleutel is geheim",
+          "body": "Push sv_licenseKey nooit naar een openbare GitHub-repo. Lekt de sleutel, dan kun je hem op portal.cfx.re intrekken en een nieuwe maken."
+        },
+        {
+          "title": "Poort 30120 openzetten",
+          "body": "Verbindt niemand van buitenaf, dan ontbreekt bijna altijd de doorverwijzing in de router (port forwarding) en de firewall – voor TCP en UDP."
+        },
+        {
+          "title": "txAdmin gebruiken",
+          "body": "In plaats van alles handmatig te configureren, leidt txAdmin (poort 40120) je via een interface door installatie, deployment en beheer. De makkelijkste weg voor beginners."
+        },
+        {
+          "title": "OneSync voor meer dan 32 slots",
+          "body": "Wil je meer dan 32 spelers tegelijk, dan heb je OneSync nodig – aan te zetten via de serverconfiguratie in het Cfx-portaal."
+        }
+      ]
+    },
+    "outro": "Draait je server, dan zijn de frameworks aan de beurt: ESX, QBCore of Qbox leveren de basissystemen waarop je scripts voortbouwen.",
+    "outroLink": "Naar de frameworks →"
   }
 }

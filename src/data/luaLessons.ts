@@ -20,9 +20,9 @@ print(playerName, playerCash)`,
     code: `local playerCash = 150
 
 if playerCash >= 100 then
-  print("Kauf möglich")
+  print("{{canBuy}}")
 else
-  print("Nicht genug Geld")
+  print("{{notEnough}}")
 end`,
   },
   {
@@ -69,7 +69,7 @@ end)
 
 RegisterNetEvent("hospital:heal")
 AddEventHandler("hospital:heal", function()
-  print("Spieler wurde geheilt")
+  print("{{playerHealed}}")
 end)`,
   },
 ]

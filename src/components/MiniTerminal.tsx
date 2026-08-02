@@ -12,6 +12,13 @@ interface Line {
 
 const PROMPT = 'guest@modsyncx:~$'
 
+const BANNER = [
+  '┌───────────────────────────────┐',
+  '│   //  M o d S y n c X          │',
+  '│   FiveM · Discord · Lua        │',
+  '└───────────────────────────────┘',
+].join('\n')
+
 export default function MiniTerminal() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
@@ -63,9 +70,32 @@ export default function MiniTerminal() {
         navigate('/frameworks')
         print(t('terminal.navigating', { target: 'frameworks' }))
         break
+      case 'server':
+        navigate('/server')
+        print(t('terminal.navigating', { target: 'server' }))
+        break
       case 'home':
         navigate('/')
         print(t('terminal.navigating', { target: 'home' }))
+        break
+      case 'ls':
+        print('about  skills  projects  contact  lua  frameworks  server')
+        break
+      case 'stack':
+        print('Lua · TypeScript · JavaScript · Python')
+        break
+      case 'echo':
+        print(args.length ? cmd.slice(cmd.indexOf(' ') + 1) : '')
+        break
+      case 'history': {
+        const history = lines
+          .filter((l) => l.type === 'input')
+          .map((l, i) => `${String(i + 1).padStart(2, ' ')}  ${l.text}`)
+        print(history.length ? history.join('\n') : '—')
+        break
+      }
+      case 'banner':
+        print(BANNER)
         break
       case 'whoami':
         print('guest')

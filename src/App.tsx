@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import LearnLua from './pages/LearnLua'
 import Frameworks from './pages/Frameworks'
+import ServerSetup from './pages/ServerSetup'
 import NotFound from './pages/NotFound'
 import './App.css'
 
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/lua" element={<LearnLua />} />
           <Route path="/frameworks" element={<Frameworks />} />
+          <Route path="/server" element={<ServerSetup />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
