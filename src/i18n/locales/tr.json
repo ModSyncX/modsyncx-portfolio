@@ -14,10 +14,22 @@
     "ctaSecondary": "Yetenekleri gör",
     "badge": "Yeni projelere açığım",
     "terminal": [
-      { "cmd": "whoami", "out": "ModSyncX" },
-      { "cmd": "role --show", "out": "FiveM Geliştiricisi & Discord Bot Geliştiricisi" },
-      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
-      { "cmd": "status", "out": "yeni taleplere hazır" }
+      {
+        "cmd": "whoami",
+        "out": "ModSyncX"
+      },
+      {
+        "cmd": "role --show",
+        "out": "FiveM Geliştiricisi & Discord Bot Geliştiricisi"
+      },
+      {
+        "cmd": "stack --list",
+        "out": "Lua · TypeScript · Python"
+      },
+      {
+        "cmd": "status",
+        "out": "yeni taleplere hazır"
+      }
     ]
   },
   "skills": {
@@ -146,6 +158,12 @@
           "hint": "Yapı: local function heal(player) ... end"
         }
       ]
+    },
+    "code": {
+      "canBuy": "Satın alma mümkün",
+      "notEnough": "Yeterli para yok",
+      "playerHealed": "Oyuncu iyileştirildi",
+      "writeHere": "Kodunu buraya yaz"
     }
   },
   "projects": {
@@ -186,7 +204,14 @@
       "eyebrow": "Temeller",
       "title": "Bir framework neyi üstlenir",
       "lead": "Neredeyse her framework bu temel sistemleri sunar — scriptler bunları yeniden icat etmek yerine üzerine inşa edilir.",
-      "systems": ["İşler", "Envanter", "Bankacılık", "Çeteler", "Konut", "Fraksiyonlar"]
+      "systems": [
+        "İşler",
+        "Envanter",
+        "Bankacılık",
+        "Çeteler",
+        "Konut",
+        "Fraksiyonlar"
+      ]
     },
     "cards": {
       "eyebrow": "Karşılaştırma",
@@ -252,7 +277,7 @@
   },
   "terminal": {
     "welcome": "Komut listesi için 'help' yaz.",
-    "help": "Kullanılabilir komutlar:\n  help          bu listeyi göster\n  about         hakkımda bölümüne git\n  skills        yeteneklere git\n  projects      projelere git\n  contact       iletişime git\n  lua           Lua rehberini aç\n  frameworks    framework rehberini aç\n  home          ana sayfaya git\n  theme         açık/koyu temayı değiştir\n  lang <code>   dili değiştir (de, en, fr, es, tr, nl)\n  whoami        tahmin et\n  clear         bu terminali temizle",
+    "help": "Kullanılabilir komutlar:\n  help          bu listeyi göster\n  about         hakkımda bölümüne git\n  skills        yeteneklere git\n  projects      projelere git\n  contact       iletişime git\n  lua           Lua rehberini aç\n  frameworks    framework rehberini aç\n  server        sunucu rehberini aç\n  home          ana sayfaya git\n  ls            sayfaları listele\n  stack         teknoloji yığınını göster\n  echo <metin>  metni yazdır\n  history       girilen komutları göster\n  banner        logoyu göster\n  github        GitHub'ı aç\n  email         e-postayı göster\n  date          geçerli tarihi göster\n  theme         açık/koyu geçiş\n  lang <code>   dili değiştir (de, en, fr, es, tr, nl)\n  whoami        tahmin et\n  clear         terminali temizle",
     "navigating": "→ {{target}} sayfasına gidiliyor …",
     "themeToggled": "Tema değiştirildi.",
     "langChanged": "Dil {{code}} olarak değiştirildi.",
@@ -260,5 +285,129 @@
     "sudo": "iyi deneme. bu statik bir site, gerçek bir shell değil.",
     "unknown": "komut bulunamadı: {{cmd}} — komut listesi için 'help' yaz.",
     "placeholder": "'help' yaz …"
+  },
+  "server": {
+    "nav": "Sunucu",
+    "back": "← Ana sayfaya dön",
+    "hero": {
+      "eyebrow": "Rehber",
+      "title": "Kendi sunucunu kur",
+      "description": "Kendi FiveM sunucunu kurmak çoğu kişinin sandığından daha hızlıdır. Bu rehber, seni server artifacts indirmekten ilk başlatmaya kadar götürür – hem Windows hem Linux için, yeni başlayanların tipik olarak düştüğü tuzaklar dahil."
+    },
+    "requirements": {
+      "eyebrow": "Başlamadan önce",
+      "title": "Neye ihtiyacın var",
+      "lead": "Windows da olsa Linux da olsa – bu dört şey olmadan başlayamazsın.",
+      "items": [
+        {
+          "label": "Donanım",
+          "detail": "En az 4 GB RAM ve güncel bir CPU'ya sahip bir makine veya VPS. Test için kendi bilgisayarın yeter; sürekli çalışma için kiralık dedicated ya da sanal sunucu kullan."
+        },
+        {
+          "label": "Cfx.re hesabı",
+          "detail": "portal.cfx.re üzerinde ücretsiz bir hesap. Sunucunun onsuz başlamayacağı lisans anahtarını orada oluşturursun."
+        },
+        {
+          "label": "Git",
+          "detail": "server-data temel kaynaklarını klonlamak için. Windows'ta git-scm.com'dan, Linux'ta paket yöneticisiyle."
+        },
+        {
+          "label": "Açık port",
+          "detail": "Diğer oyuncuların bağlanabilmesi için 30120 portu (TCP ve UDP) güvenlik duvarında ve yönlendiricide açık olmalı."
+        }
+      ]
+    },
+    "setup": {
+      "eyebrow": "Adım adım",
+      "title": "İndirmeden çalışan sunucuya",
+      "lead": "İlk başlatmaya kadar beş adım. Windows ve Linux arasında geçiş yap – komutlar buna göre değişir.",
+      "windowsLabel": "Windows",
+      "linuxLabel": "Linux",
+      "note": "Not: Cfx.re Linux sürümünü yalnızca \"courtesy port\" olarak sunar – hata düzeltmeleri önce Windows'a gelir. Başlangıç için genelde Windows daha sorunsuz yoldur.",
+      "windows": [
+        {
+          "title": "Artifacts'ı indir",
+          "body": "Server Download sayfasından \"recommended\" işaretli güncel build'i al ve 7-Zip veya WinRAR ile C:\\FXServer\\server içine çıkar. Asla en yeni build'i alma – kararsız olabilir."
+        },
+        {
+          "title": "server-data'yı klonla",
+          "body": "Temel kaynaklar (chat, spawnmanager, mapmanager …) bir Git deposunda. Bunları artifacts'ın yanında ayrı bir klasöre klonla."
+        },
+        {
+          "title": "Lisans anahtarı oluştur",
+          "body": "portal.cfx.re'ye giriş yap ve ücretsiz bir sunucu anahtarı oluştur. Bunu birazdan server.cfg'ye yazacaksın – ve asla herkese açık bir depoya gönderme."
+        },
+        {
+          "title": "server.cfg oluştur",
+          "body": "server.cfg sunucunun kalbidir: portlar, ad, slotlar, lisans ve hangi kaynakların başlayacağı. Onu server-data klasöründe oluştur."
+        },
+        {
+          "title": "Sunucuyu başlat",
+          "body": "server-data klasörüne geç ve FXServer.exe'yi config'inle başlat. txAdmin otomatik çalışır – sunucuyu arayüzden yönetmek için tarayıcıda localhost:40120'yi aç."
+        }
+      ],
+      "linux": [
+        {
+          "title": "Paketleri ve artifacts'ı kur",
+          "body": "Git ve xz-utils kur, klasör yapısını oluştur ve indirdiğin Linux build'ini (fx.tar.xz) çıkar."
+        },
+        {
+          "title": "server-data'yı klonla",
+          "body": "Temel kaynakları sunucu ikili dosyalarının yanında ayrı bir klasöre klonla."
+        },
+        {
+          "title": "Lisans anahtarı oluştur",
+          "body": "portal.cfx.re'de ücretsiz bir anahtar oluştur. server.cfg'ye gider ve asla herkese açık bir depoya konmaz."
+        },
+        {
+          "title": "server.cfg oluştur",
+          "body": "Portlar, ad, slotlar, lisans ve başlangıç kaynakları – hepsi server-data klasöründeki server.cfg'ye girer."
+        },
+        {
+          "title": "Sunucuyu başlat",
+          "body": "Sunucuyu run.sh ile başlat. Sürekli çalışma için onu bir screen veya tmux oturumuna (ya da systemd servisine) al ki çıkış yaptıktan sonra da çalışmaya devam etsin."
+        }
+      ],
+      "snippets": {
+        "structureFile": "klasor-yapisi",
+        "structExtract": "# artifacts'ı buraya çıkar",
+        "structNext": "# 2. adımda eklenir",
+        "licLine1": "# 1. https://portal.cfx.re adresinde giriş yap",
+        "licLine2": "# 2. \"New server key\" -> anahtarı kopyala",
+        "licLine3": "# 3. server.cfg içine yaz:",
+        "hostname": "İlk FiveM sunucum",
+        "linuxDownload": "# fx.tar.xz'i Server Download sayfasından indir, sonra:",
+        "persistComment": "# screen ile çalışır tut:",
+        "detachComment": "# Ctrl+A, sonra D ile ayır"
+      }
+    },
+    "pitfalls": {
+      "eyebrow": "Dikkat",
+      "title": "Sık yapılan hatalar",
+      "items": [
+        {
+          "title": "Her zaman \"recommended\" build",
+          "body": "En yeni artifact build'i çoğu zaman bleeding edge'dir. Kararlı bir sunucu için yeşil \"recommended\" işaretli olanı seç."
+        },
+        {
+          "title": "Lisans anahtarı gizlidir",
+          "body": "sv_licenseKey'i asla herkese açık bir GitHub deposuna gönderme. Anahtar sızarsa portal.cfx.re'de iptal edip yenisini oluşturabilirsin."
+        },
+        {
+          "title": "30120 portunu aç",
+          "body": "Dışarıdan kimse bağlanamıyorsa neredeyse her zaman yönlendiricide (port forwarding) ve güvenlik duvarında eksik açma vardır – TCP ve UDP için."
+        },
+        {
+          "title": "txAdmin kullan",
+          "body": "Her şeyi elle ayarlamak yerine txAdmin (port 40120) kurulum, dağıtım ve yönetimde seni arayüzle yönlendirir. Yeni başlayanlar için en kolay yol."
+        },
+        {
+          "title": "32 slottan fazlası için OneSync",
+          "body": "Aynı anda 32'den fazla oyuncu istiyorsan OneSync gerekir – Cfx portalındaki sunucu yapılandırmasından etkinleştirilir."
+        }
+      ]
+    },
+    "outro": "Sunucun çalışınca sıra framework'lerde: ESX, QBCore veya Qbox, scriptlerinin üzerine kurulduğu temel sistemleri sağlar.",
+    "outroLink": "Framework'lere →"
   }
 }

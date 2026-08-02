@@ -14,10 +14,22 @@
     "ctaSecondary": "Voir les compétences",
     "badge": "Disponible pour de nouveaux projets",
     "terminal": [
-      { "cmd": "whoami", "out": "ModSyncX" },
-      { "cmd": "role --show", "out": "Développeur FiveM & développeur de bots Discord" },
-      { "cmd": "stack --list", "out": "Lua · TypeScript · Python" },
-      { "cmd": "status", "out": "prêt pour de nouvelles demandes" }
+      {
+        "cmd": "whoami",
+        "out": "ModSyncX"
+      },
+      {
+        "cmd": "role --show",
+        "out": "Développeur FiveM & développeur de bots Discord"
+      },
+      {
+        "cmd": "stack --list",
+        "out": "Lua · TypeScript · Python"
+      },
+      {
+        "cmd": "status",
+        "out": "prêt pour de nouvelles demandes"
+      }
     ]
   },
   "skills": {
@@ -146,6 +158,12 @@
           "hint": "Structure : local function heal(player) ... end"
         }
       ]
+    },
+    "code": {
+      "canBuy": "Achat possible",
+      "notEnough": "Pas assez d'argent",
+      "playerHealed": "Le joueur a été soigné",
+      "writeHere": "Écris ton code ici"
     }
   },
   "projects": {
@@ -186,7 +204,14 @@
       "eyebrow": "Fondamentaux",
       "title": "Ce que prend en charge un framework",
       "lead": "Presque tous les frameworks fournissent ces systèmes de base — les scripts s'appuient dessus au lieu de les réinventer.",
-      "systems": ["Emplois", "Inventaire", "Banque", "Gangs", "Logement", "Factions"]
+      "systems": [
+        "Emplois",
+        "Inventaire",
+        "Banque",
+        "Gangs",
+        "Logement",
+        "Factions"
+      ]
     },
     "cards": {
       "eyebrow": "Comparaison",
@@ -252,7 +277,7 @@
   },
   "terminal": {
     "welcome": "Tapez 'help' pour voir la liste des commandes.",
-    "help": "Commandes disponibles :\n  help          afficher cette liste\n  about         aller à la section à propos\n  skills        aller aux compétences\n  projects      aller aux projets\n  contact       aller au contact\n  lua           ouvrir le guide Lua\n  frameworks    ouvrir le guide des frameworks\n  home          retour à l'accueil\n  theme         basculer clair/sombre\n  lang <code>   changer de langue (de, en, fr, es, tr, nl)\n  whoami        devinez\n  clear         effacer ce terminal",
+    "help": "Commandes disponibles :\n  help          afficher cette liste\n  about         aller à la section à propos\n  skills        aller aux compétences\n  projects      aller aux projets\n  contact       aller au contact\n  lua           ouvrir le guide Lua\n  frameworks    ouvrir le guide des frameworks\n  server        ouvrir le guide serveur\n  home          aller à l'accueil\n  ls            lister les pages\n  stack         afficher la stack technique\n  echo <texte>  afficher du texte\n  history       afficher les commandes saisies\n  banner        afficher le logo\n  github        ouvrir GitHub\n  email         afficher l'e-mail\n  date          afficher la date actuelle\n  theme         basculer clair/sombre\n  lang <code>   changer de langue (de, en, fr, es, tr, nl)\n  whoami        devine\n  clear         vider le terminal",
     "navigating": "→ navigation vers {{target}} …",
     "themeToggled": "Thème changé.",
     "langChanged": "Langue changée en {{code}}.",
@@ -260,5 +285,129 @@
     "sudo": "bien essayé. ceci est un site statique, pas un vrai shell.",
     "unknown": "commande introuvable : {{cmd}} — tapez 'help' pour la liste des commandes.",
     "placeholder": "tapez 'help' …"
+  },
+  "server": {
+    "nav": "Serveur",
+    "back": "← Retour à l'accueil",
+    "hero": {
+      "eyebrow": "Guide",
+      "title": "Monte ton propre serveur",
+      "description": "Monter son propre serveur FiveM est plus rapide qu'on ne le pense. Ce guide te mène du téléchargement des artifacts jusqu'au premier lancement – pour Windows et Linux, y compris les pièges dans lesquels les débutants tombent souvent."
+    },
+    "requirements": {
+      "eyebrow": "Avant de commencer",
+      "title": "Ce qu'il te faut",
+      "lead": "Que ce soit Windows ou Linux – impossible de démarrer sans ces quatre éléments.",
+      "items": [
+        {
+          "label": "Matériel",
+          "detail": "Une machine ou un VPS avec au moins 4 Go de RAM et un CPU récent. Ton propre PC suffit pour tester ; pour un fonctionnement continu, loue un serveur dédié ou virtuel."
+        },
+        {
+          "label": "Compte Cfx.re",
+          "detail": "Un compte gratuit sur portal.cfx.re. C'est là que tu crées la clé de licence sans laquelle le serveur ne démarre pas."
+        },
+        {
+          "label": "Git",
+          "detail": "Pour cloner les ressources de base server-data. Sur Windows depuis git-scm.com, sur Linux via le gestionnaire de paquets."
+        },
+        {
+          "label": "Port ouvert",
+          "detail": "Le port 30120 (TCP et UDP) doit être ouvert dans le pare-feu et le routeur pour que d'autres joueurs puissent se connecter."
+        }
+      ]
+    },
+    "setup": {
+      "eyebrow": "Étape par étape",
+      "title": "Du téléchargement au serveur en marche",
+      "lead": "Cinq étapes jusqu'au premier lancement. Bascule entre Windows et Linux – les commandes s'adaptent.",
+      "windowsLabel": "Windows",
+      "linuxLabel": "Linux",
+      "note": "Remarque : Cfx.re ne fournit la version Linux qu'en tant que « courtesy port » – les correctifs arrivent d'abord sur Windows. Pour débuter, Windows est souvent la voie la plus tranquille.",
+      "windows": [
+        {
+          "title": "Télécharger les artifacts",
+          "body": "Récupère le build actuel marqué « recommended » sur la page Server Download et extrais-le avec 7-Zip ou WinRAR dans C:\\FXServer\\server. Ne prends jamais le tout dernier build – il peut être instable."
+        },
+        {
+          "title": "Cloner server-data",
+          "body": "Les ressources de base (chat, spawnmanager, mapmanager …) sont dans un dépôt Git. Clone-les dans un dossier séparé à côté des artifacts."
+        },
+        {
+          "title": "Créer une clé de licence",
+          "body": "Connecte-toi sur portal.cfx.re et crée une clé de serveur gratuite. Tu la mettras ensuite dans server.cfg – et ne la pousses jamais dans un dépôt public."
+        },
+        {
+          "title": "Créer server.cfg",
+          "body": "server.cfg est le cœur de ton serveur : ports, nom, slots, licence et ressources à lancer. Crée-le dans le dossier server-data."
+        },
+        {
+          "title": "Lancer le serveur",
+          "body": "Place-toi dans le dossier server-data et lance FXServer.exe avec ta config. txAdmin tourne automatiquement – ouvre localhost:40120 dans le navigateur pour gérer le serveur via une interface."
+        }
+      ],
+      "linux": [
+        {
+          "title": "Installer paquets & artifacts",
+          "body": "Installe Git et xz-utils, crée la structure de dossiers et extrais le build Linux téléchargé (fx.tar.xz)."
+        },
+        {
+          "title": "Cloner server-data",
+          "body": "Clone les ressources de base dans un dossier séparé à côté des binaires du serveur."
+        },
+        {
+          "title": "Créer une clé de licence",
+          "body": "Crée une clé gratuite sur portal.cfx.re. Elle va dans server.cfg et n'a jamais sa place dans un dépôt public."
+        },
+        {
+          "title": "Créer server.cfg",
+          "body": "Ports, nom, slots, licence et ressources de démarrage – tout va dans server.cfg dans le dossier server-data."
+        },
+        {
+          "title": "Lancer le serveur",
+          "body": "Lance le serveur via run.sh. Pour un fonctionnement continu, mets-le dans une session screen ou tmux (ou un service systemd) pour qu'il continue après ta déconnexion."
+        }
+      ],
+      "snippets": {
+        "structureFile": "arborescence",
+        "structExtract": "# extraire les artifacts ici",
+        "structNext": "# ajouté à l'étape 2",
+        "licLine1": "# 1. Se connecter sur https://portal.cfx.re",
+        "licLine2": "# 2. \"New server key\" -> copier la clé",
+        "licLine3": "# 3. La mettre dans server.cfg :",
+        "hostname": "Mon premier serveur FiveM",
+        "linuxDownload": "# télécharger fx.tar.xz depuis la page Server Download, puis :",
+        "persistComment": "# garder actif avec screen :",
+        "detachComment": "# Ctrl+A, puis D pour détacher"
+      }
+    },
+    "pitfalls": {
+      "eyebrow": "Attention",
+      "title": "Pièges fréquents",
+      "items": [
+        {
+          "title": "Toujours le build « recommended »",
+          "body": "Le build d'artifacts le plus récent est souvent bleeding edge. Pour un serveur stable, prends celui marqué en vert « recommended »."
+        },
+        {
+          "title": "La clé de licence est secrète",
+          "body": "Ne pousse jamais sv_licenseKey dans un dépôt GitHub public. Si la clé fuite, tu peux la révoquer sur portal.cfx.re et en créer une nouvelle."
+        },
+        {
+          "title": "Ouvrir le port 30120",
+          "body": "Si personne ne se connecte de l'extérieur, c'est presque toujours la redirection manquante dans le routeur (port forwarding) et le pare-feu – pour TCP et UDP."
+        },
+        {
+          "title": "Utiliser txAdmin",
+          "body": "Plutôt que tout configurer à la main, txAdmin (port 40120) te guide via une interface pour l'installation, le déploiement et la gestion. La voie la plus simple pour débuter."
+        },
+        {
+          "title": "OneSync au-delà de 32 slots",
+          "body": "Si tu veux plus de 32 joueurs en même temps, il te faut OneSync – activable via la configuration du serveur dans le portail Cfx."
+        }
+      ]
+    },
+    "outro": "Une fois ton serveur en marche, place aux frameworks : ESX, QBCore ou Qbox fournissent les systèmes de base sur lesquels tes scripts se construisent.",
+    "outroLink": "Vers les frameworks →"
   }
 }

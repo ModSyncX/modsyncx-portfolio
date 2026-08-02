@@ -55,6 +55,10 @@ export default function Header() {
             <span className="nav-index mono">{'{}'}</span>
             {t('frameworks.nav')}
           </Link>
+          <Link to="/server">
+            <span className="nav-index mono">⚙</span>
+            {t('server.nav')}
+          </Link>
         </nav>
 
         <div className="header-actions">

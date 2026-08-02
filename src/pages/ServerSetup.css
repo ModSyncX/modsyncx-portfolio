@@ -1,0 +1,175 @@
+/* Voraussetzungen */
+.requirement-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.requirement-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.requirement-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.requirement-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.requirement-card p {
+  margin-top: 12px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-size: 14.5px;
+}
+
+/* OS-Toggle (Windows / Linux) */
+.os-toggle {
+  margin-top: 44px;
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.os-tab {
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.os-tab:hover {
+  color: var(--text);
+}
+
+.os-tab.active {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.setup-note {
+  margin-top: 24px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 4px;
+}
+
+.setup-note p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Setup-Schritte */
+.setup-list {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.setup-row {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.setup-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.setup-copy h3 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.setup-copy p {
+  margin-top: 12px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+/* Stolperfallen */
+.pitfall-list {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pitfall-card {
+  display: flex;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 22px 24px;
+}
+
+.pitfall-mark {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pitfall-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pitfall-card p {
+  margin-top: 8px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.setup-outro-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 860px) {
+  .setup-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .requirement-grid,
+  .pitfall-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,6 +4,7 @@ import type { LuaChallenge } from '../data/luaChallenges'
 interface CodePlaygroundProps {
   filename: string
   challenge: LuaChallenge
+  starter: string
   checkLabel: string
   resetLabel: string
   hintLabel: string
@@ -15,6 +16,7 @@ interface CodePlaygroundProps {
 export default function CodePlayground({
   filename,
   challenge,
+  starter,
   checkLabel,
   resetLabel,
   hintLabel,
@@ -22,7 +24,7 @@ export default function CodePlayground({
   correctLabel,
   incorrectLabel,
 }: CodePlaygroundProps) {
-  const [code, setCode] = useState(challenge.starter)
+  const [code, setCode] = useState(starter)
   const [result, setResult] = useState<'idle' | 'correct' | 'incorrect'>('idle')
   const [hintVisible, setHintVisible] = useState(false)
 
@@ -31,7 +33,7 @@ export default function CodePlayground({
   }
 
   function handleReset() {
-    setCode(challenge.starter)
+    setCode(starter)
     setResult('idle')
     setHintVisible(false)
   }
